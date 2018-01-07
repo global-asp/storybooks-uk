@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storybooks UK</title>
+    <description>Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
+</description>
+    <link>https://global-asp.github.io/storybooks-uk//</link>
+    <atom:link href="https://global-asp.github.io/storybooks-uk//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 06 Jan 2018 16:09:23 -0800</pubDate>
+    <lastBuildDate>Sat, 06 Jan 2018 16:09:23 -0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
