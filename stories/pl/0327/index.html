@@ -9,8 +9,9 @@
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-uk//stories/pl/0327/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="https://global-asp.github.io/storybooks-uk/">
+	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/pl/0327/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
 	<script src="/storybooks-uk/js/sbc.js"></script>
 </head>
 
@@ -57,15 +58,17 @@
         <a class="btn btn-lg" href="/storybooks-uk/stories/pl" class="button">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Liczymy zwierzęta</span>
-<span class="en">Counting animals</span>
-<span class="fr">Compter les animaux</span>
+			<span class="l1">Counting animals</span>
+			<span class="l2">Compter les animaux</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/pl/0327/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/01.mp3"></audio>
+				<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+				<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by" width="38px"></span> Zanele Buthelezi, Thembani Dladla, Clare Verbeek</h3>
@@ -73,34 +76,36 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-uk/css/global.svg" alt="Translated by" width="38px"></span> Aleksandra Migorska</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-uk/stories/pl">Polish</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-uk/stories/pl/level1">Level 1</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/pl/0327/0327.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/pl/0327/pl-0327_counting.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Jeden słoń zamierza pić wodę.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/02.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
+	Jeden słoń będzie pić wodę.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	One elephant is going
 to drink water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Un éléphant va boire l'eau.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/pl/0327/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -108,28 +113,29 @@ to drink water.
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Dwie żyrafy zamierzają pić wodę.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/03.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
+	Dwie żyrafy będą pić wodę.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Two giraffes are going
 to drink water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Deux girafes vont boire l'eau.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/pl/0327/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -137,29 +143,30 @@ to drink water.
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Trzy bawoły i cztery ptaki również zamierzają pić wodę.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/04.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
+	Trzy bawoły i cztery ptaki również będą pić wodę.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Three buffaloes and
 four birds are also going
 to drink water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Trois bœufs et quatre oiseaux vont boire l'eau.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/pl/0327/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -167,29 +174,30 @@ to drink water.
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Pięć antylop i sześć dzików podchodzą do wodopoju.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/05.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
+	Pięć antylop i sześć guźców podchodzi do wodopoju.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Five impalas and six
 wild pigs are walking to
 the water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Cinq impalas et six cochons sauvages vont boire l'eau.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/pl/0327/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -197,29 +205,30 @@ the water.
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/06.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
 	Siedem zebr biegnie to wodopoju.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Seven zebras are
 running
 to the water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Sept zèbres courent vers l'eau.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/pl/0327/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -227,29 +236,30 @@ to the water.
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Osiem żab i dziewięć ryb płyną w wodzie.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/07.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
+	Osiem żab i dziewięć ryb pływa w wodzie.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Eight frogs and nine fish
 are swimming in the
 water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Huit grenouilles et neuf poissons nagent dans l'eau.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/pl/0327/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -257,30 +267,31 @@ water.
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Jeden lew ryczy. On również chce napić się wody. Kto boi się lwa?
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/08.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
+	Jeden lew ryczy. On również chce napić się wody. Kto się boi lwa?
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	One lion roars.
 He also wants to drink.
 Who is afraid of the
 lion?
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Un lion rugit. Il veut boire aussi. Qui a peur du lion ?
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio08" src="http://storybookscanada.ca/audio/pl/0327/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -288,29 +299,30 @@ lion?
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0327/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Jeden słoń pije wodę razem z lwem.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/09.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3>
+
+	Jeden słoń i lew piją razem wodę.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	One elephant is
 drinking water with the
 lion.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	Un éléphant boit de l'eau avec le lion.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Story credits" width="16px"></a>
-		<audio id="audio09" src="http://storybookscanada.ca/audio/pl/0327/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/pl/0327/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -338,13 +350,13 @@ lion.
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0030/">Uczucia</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0002/">Przyjrzyjmy się zwierzętom</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0003/">Mundurki szkolne</a></label>
-			<label class="chip"><a href="/storybooks-uk/stories/pl/0271/">Para</a></label>
-			<label class="chip"><a href="/storybooks-uk/stories/pl/0008/">Co robisz?</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/pl/0271/">Dwa</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0156/">Głodny krokodyl</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/pl/0120/">Włosy</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0231/">Książka o pogodzie</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0302/">Ogień</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0087/">Lubię czytać!</a></label>
-			<label class="chip"><a href="/storybooks-uk/stories/pl/0120/">Włosy</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/pl/0008/">Co robisz?</a></label>
 	</div>
 </div>
 <div>

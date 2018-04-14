@@ -9,8 +9,9 @@
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-uk//stories/fr/0342/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="https://global-asp.github.io/storybooks-uk/">
+	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/fr/0342/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
 	<script src="/storybooks-uk/js/sbc.js"></script>
 </head>
 
@@ -57,15 +58,17 @@
         <a class="btn btn-lg" href="/storybooks-uk/stories/fr" class="button">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Punition</span>
-<span class="en">Punishment</span>
-<span class="fr">Punition</span>
+			<span class="l1">Punishment</span>
+			<span class="l2">Punition</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/fr/0342/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/01.mp3"></audio>
+				<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+				<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by" width="38px"></span> Adelheid Marie Bwire</h3>
@@ -74,38 +77,40 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-uk/css/megaphone.svg" alt="Read by" width="38px"></span> Alexandra Danahy</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-uk/stories/fr">French</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-uk/stories/fr/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/fr/0342/0342.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0342/fr-0342_punishment.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/02.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Un jour, Maman a
 ramassé beaucoup de
 fruits.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	One day, mama got a
 lot of fruit.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Un jour, Maman a
 ramassé beaucoup de
 fruits.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/fr/0342/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -113,38 +118,37 @@ fruits.
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Nous lui demandons : «
-Pouvons-nous manger
-des fruits ? »
-Maman répond : « Nous
-les mangerons ce soir. »
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/03.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
+	Nous lui demandons&nbsp;: «&nbsp;Pouvons-nous manger
+des fruits&nbsp;?&nbsp;»
+Maman répond&nbsp;: «&nbsp;Nous
+les mangerons ce soir.&nbsp;»
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	"When can we have
 some fruit?" we ask.
 "We will eat the fruit
 tonight," says mama.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	Nous lui demandons : «
-Pouvons-nous manger
-des fruits ? »
-Maman répond : « Nous
-les mangerons ce soir. »
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	Nous lui demandons&nbsp;: «&nbsp;Pouvons-nous manger
+des fruits&nbsp;?&nbsp;»
+Maman répond&nbsp;: «&nbsp;Nous
+les mangerons ce soir.&nbsp;»
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/fr/0342/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -152,35 +156,36 @@ les mangerons ce soir. »
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/04.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Mon frère Rahim est
 glouton.
 Il goûte tous les fruits.
 Il en mange beaucoup.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	My brother Rahim is
 greedy. He tastes all the
 fruit. He eats a lot of it.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Mon frère Rahim est
 glouton.
 Il goûte tous les fruits.
 Il en mange beaucoup.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/fr/0342/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -188,41 +193,40 @@ Il en mange beaucoup.
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	« Regarde ce qu'a fait
-Rahim ! », crie mon
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/05.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
+	«&nbsp;Regarde ce qu'a fait
+Rahim&nbsp;!&nbsp;», crie mon
 petit frère.
-Et moi, je dis : « Rahim
-est méchant et égoïste.
-»
+Et moi, je dis&nbsp;: «&nbsp;Rahim
+est méchant et égoïste.&nbsp;»
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	"Look at what Rahim
 did!" shouts my little
 brother. "Rahim is
 naughty and selfish," I
 say.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	« Regarde ce qu'a fait
-Rahim ! », crie mon
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	«&nbsp;Regarde ce qu'a fait
+Rahim&nbsp;!&nbsp;», crie mon
 petit frère.
-Et moi, je dis : « Rahim
-est méchant et égoïste.
-»
+Et moi, je dis&nbsp;: «&nbsp;Rahim
+est méchant et égoïste.&nbsp;»
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/fr/0342/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -230,30 +234,31 @@ est méchant et égoïste.
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/06.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Maman est fâchée
 contre Rahim.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Mother is angry with
 Rahim.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Maman est fâchée
 contre Rahim.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/fr/0342/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -261,8 +266,9 @@ contre Rahim.
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/07.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Nous aussi, nous
 sommes fâchés contre
 Rahim.
@@ -270,12 +276,12 @@ Mais Rahim ne regrette
 rien.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	We are also angry with
 Rahim. But Rahim is not
 sorry.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Nous aussi, nous
 sommes fâchés contre
 Rahim.
@@ -283,15 +289,15 @@ Mais Rahim ne regrette
 rien.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/fr/0342/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -299,33 +305,34 @@ rien.
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	« Tu ne vas pas punir
-Rahim ? », demande
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/08.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
+	«&nbsp;Tu ne vas pas punir
+Rahim&nbsp;?&nbsp;», demande
 Petit Frère.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	"Aren't you going to
 punish Rahim?" asks
 little brother.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	« Tu ne vas pas punir
-Rahim ? », demande
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	«&nbsp;Tu ne vas pas punir
+Rahim&nbsp;?&nbsp;», demande
 Petit Frère.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio08" src="http://storybookscanada.ca/audio/fr/0342/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -333,32 +340,33 @@ Petit Frère.
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	« Rahim », prévient
-maman, « tu le
-regretteras bientôt. »
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/09.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
+	«&nbsp;Rahim&nbsp;», prévient
+maman, «&nbsp;tu le
+regretteras bientôt.&nbsp;»
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	"Rahim, soon you will
 be sorry," warns mama.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	« Rahim », prévient
-maman, « tu le
-regretteras bientôt. »
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	«&nbsp;Rahim&nbsp;», prévient
+maman, «&nbsp;tu le
+regretteras bientôt.&nbsp;»
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio09" src="http://storybookscanada.ca/audio/fr/0342/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -366,30 +374,31 @@ regretteras bientôt. »
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/10.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Rahim ne se sent pas
 bien.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Rahim starts to feel
 sick.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Rahim ne se sent pas
 bien.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio10" src="http://storybookscanada.ca/audio/fr/0342/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -397,30 +406,31 @@ bien.
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Il gémit: « J'ai mal au
-ventre ! »
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/11.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
+	Il gémit&nbsp;: «&nbsp;J'ai mal au
+ventre&nbsp;!&nbsp;»
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	"My tummy is so sore,"
 whispers Rahim.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	Il gémit: « J'ai mal au
-ventre ! »
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	Il gémit&nbsp;: «&nbsp;J'ai mal au
+ventre&nbsp;!&nbsp;»
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio11" src="http://storybookscanada.ca/audio/fr/0342/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -428,35 +438,36 @@ ventre ! »
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/12.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Maman savait que cela
 arriverait.
 Ce sont les fruits qui
-punissent Rahim !
+punissent Rahim&nbsp;!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Mama knew this would
 happen. The fruit is
 punishing Rahim!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Maman savait que cela
 arriverait.
 Ce sont les fruits qui
-punissent Rahim !
+punissent Rahim&nbsp;!
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio12" src="http://storybookscanada.ca/audio/fr/0342/mp3/12.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('12')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -464,41 +475,40 @@ punissent Rahim !
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0342/13.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/13.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Plus tard, Rahim vient
-s'excuser et promet : «
-Je ne serai plus jamais
-aussi glouton. »
+s'excuser et promet&nbsp;: «&nbsp;Je ne serai plus jamais
+aussi glouton.&nbsp;»
 Et nous, nous le
 croyons.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Later, Rahim says sorry
 to us. "I will never be so
 greedy again," he
 promises. And we all
 believe him.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Plus tard, Rahim vient
-s'excuser et promet : «
-Je ne serai plus jamais
-aussi glouton. »
+s'excuser et promet&nbsp;: «&nbsp;Je ne serai plus jamais
+aussi glouton.&nbsp;»
 Et nous, nous le
 croyons.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Story credits" width="16px"></a>
-		<audio id="audio13" src="http://storybookscanada.ca/audio/fr/0342/mp3/13.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('13')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/fr/0342/mp3/13.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','fr')" class="btn btn-lg lang-fr" title="Switch between French and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('fr,en','en,fr,fr')" class="btn btn-lg lang-primary" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,fr','en,fr,fr')" class="btn btn-lg lang-secondary" title="Switch between French and French">fr</button>
 	</div>
 </div>
 
@@ -522,7 +532,7 @@ croyons.
 		<h5>Read more <a href="/storybooks-uk/stories/fr/level2">level 2</a> stories:</h5>
 			<label class="chip"><a href="/storybooks-uk/stories/fr/0111/">Pourquoi les hippopotames n'ont pas de poils</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/fr/0337/">Les enfants de cire</a></label>
-			<label class="chip"><a href="/storybooks-uk/stories/fr/0095/">Zama est formidable !</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/fr/0095/">Zama est formidable&nbsp;!</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/fr/0089/">Khalai parle aux plantes</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/fr/0027/">La décision</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/fr/0296/">Tom le vendeur de bananes</a></label>

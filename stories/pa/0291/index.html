@@ -9,8 +9,9 @@
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-uk//stories/pa/0291/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="https://global-asp.github.io/storybooks-uk/">
+	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/pa/0291/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
 	<script src="/storybooks-uk/js/sbc.js"></script>
 </head>
 
@@ -57,15 +58,17 @@
         <a class="btn btn-lg" href="/storybooks-uk/stories/pa" class="button">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">ਜੋ ਵੁਸੀ ਦੀ ਭੈਣ ਨੇ ਕਿਹਾ</span>
-<span class="en">What Vusi's sister said</span>
-<span class="fr">Que va dire la sœur de Vusi ?</span>
+			<span class="l1">What Vusi's sister said</span>
+			<span class="l2">Que va dire la sœur de Vusi ?</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/pa/0291/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/01.mp3"></audio>
+				<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+				<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by" width="38px"></span> Nina Orange</h3>
@@ -74,25 +77,27 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-uk/css/megaphone.svg" alt="Read by" width="38px"></span> Gurleen Parmar</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-uk/stories/pa">Punjabi</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-uk/stories/pa/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/pa/0291/0291.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/pa/0291/pa-0291_vusi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/02.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਇੱਕ ਦਿਨ ਸਵੇਰੇ ਦਾਦੀ ਨੇ ਵੁਸੀ ਨੂੰ ਆਵਾਜ਼ ਦਿੱਤੀ, "ਵੁਸੀ, ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਮਾਤਾ-ਪਿਤਾ ਨੂੰ ਇਹ ਅੰਡਾ ਦੇ ਆ। ਉਹ ਤੇਰੀ ਭੈਣ ਦੇ ਵਿਆਹ ਲਈ ਇੱਕ ਵੱਡਾ ਕੇਕ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹਨ।"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Early one morning Vusi's granny
-called him, “Vusi, please take this
+called him, "Vusi, please take this
 egg to your parents. They want to
 make a large cake for your sister's
-wedding”.
+wedding".
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Un matin de bonne heure, Vusi est
 appelé par sa grand-mère, « Vusi, s'il
 te plaît, peux tu amener cet œuf à
@@ -101,15 +106,15 @@ gâteau pour le mariage de ta
 sœur ».
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/pa/0291/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -117,18 +122,19 @@ sœur ».
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/03.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਉਸ ਦੇ ਮਾਤਾ-ਪਿਤਾ ਦੇ ਘਰ ਜਾਂਦੇ ਹੋਏ, ਵੁਸੀ ਨੂੰ ਦੋ ਮੁੰਡੇ ਫ਼ਲ ਤੋੜਦੇ ਮਿਲੇ। ਇੱਕ ਮੁੰਡੇ ਨੇ ਵੁਸੀ ਤੋਂ ਅੰਡਾ ਖੋਇਆ ਅਤੇ ਰੁੱਖ ਤੇ ਸੁੱਟਿਆ। ਅੰਡਾ ਟੁੱਟ ਗਿਆ।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	On his way to his parents, Vusi met
 two boys picking fruit. One boy
 grabbed the egg from Vusi and shot
 it at a tree. The egg broke.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	En allant chez ses parents, Vusi
 rencontra deux garçons en train de
 cueillir des fruits. Un des garçons
@@ -136,15 +142,15 @@ s'empara de l'œuf de Vusi et le
 lança sur un arbre. L'œuf se cassa.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/pa/0291/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -152,19 +158,20 @@ lança sur un arbre. L'œuf se cassa.
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/04.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	"ਇਹ ਤੂੰ ਕੀ ਕੀਤਾ?" ਵੁਸੀ ਰੋਇਆ। "ਉਹ ਅੰਡਾ ਕੇਕ ਲਈ ਸੀ। ਕੇਕ ਮੇਰੀ ਭੈਣ ਦੇ ਵਿਆਹ ਲਈ ਸੀ। ਮੇਰੀ ਭੈਣ ਕੀ ਕਹੇਗੀ ਜੇ ਵਿਆਹ ਵਿੱਚ ਕੋਈ ਕੇਕ ਨਾ ਹੋਇਆ?"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	“What have you done?” cried Vusi.
-“That egg was for a cake. The cake
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	"What have you done?" cried Vusi.
+"That egg was for a cake. The cake
 was for my sister's wedding. What
 will my sister say if there is no
-wedding cake?”
+wedding cake?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	« Qu'as-tu fait ? » cria Vusi. « Cet œuf
 était pour un gâteau, le gâteau du
 mariage de ma sœur. Que va dire
@@ -172,15 +179,15 @@ ma sœur s'il n'y a pas de gâteau
 pour son mariage ? »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/pa/0291/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -188,20 +195,21 @@ pour son mariage ? »
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/05.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਮੁੰਡਿਆਂ ਨੇ ਵੁਸੀ ਨੂੰ ਛੇੜਨ ਦਾ ਅਫ਼ਸੋਸ ਮੰਨਿਆ। "ਅਸੀਂ ਕੇਕ ਨਾਲ ਮਦਦ ਨਹੀਂ ਕਰ ਸਕਦੇ ਪਰ ਇਹ ਤੇਰੀ ਭੈਣ ਲਈ ਸੋਟੀ ਹੈ," ਇੱਕ ਨੇ ਕਿਹਾ। ਵੁਸੀ ਆਪਣੀ ਯਾਤਰਾ ਤੇ ਜਾਰੀ ਰਿਹਾ।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	The boys were sorry for teasing
 Vusi.
-“We can't help with the cake, but
+"We can't help with the cake, but
 here is a walking stick for your
-sister,” said one.
+sister," said one.
 Vusi continued on his journey.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Les garçons étaient désolés d'avoir
 taquiné Vusi.
 « Nous ne pouvons rien faire pour le
@@ -210,15 +218,15 @@ marche pour ta sœur, » dit l'un
 d'eux. Vusi poursuivit sa route.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/pa/0291/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -226,19 +234,20 @@ d'eux. Vusi poursuivit sa route.
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	ਰਸਤੇ ਵਿੱਚ ਉਸ ਨੂੰ ਦੋ ਆਦਮੀ ਘਰ ਬਣਾਉਦੇ ਮਿਲੇ। "ਕੀ ਅਸੀਂ ਉਹ ਮਜ਼ਬੂਤ ਸੋਟੀ ਵਰਤ ਸਕਦੇ ਹਾਂ?" ਇੱਕ ਨੇ ਪੁੱਛਿਆ। ਪਰ ਸੋਟੀ ਇਮਾਰਤ ਲਈ ਮਜ਼ਬੂਤ ਨਹੀਂ ਸੀ, ਅਤੇ ਉਹ ਟੁੱਟ ਗਈ। 
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/06.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	ਰਸਤੇ ਵਿੱਚ ਉਸ ਨੂੰ ਦੋ ਆਦਮੀ ਘਰ ਬਣਾਉਦੇ ਮਿਲੇ। "ਕੀ ਅਸੀਂ ਉਹ ਮਜ਼ਬੂਤ ਸੋਟੀ ਵਰਤ ਸਕਦੇ ਹਾਂ?" ਇੱਕ ਨੇ ਪੁੱਛਿਆ। ਪਰ ਸੋਟੀ ਇਮਾਰਤ ਲਈ ਮਜ਼ਬੂਤ ਨਹੀਂ ਸੀ, ਅਤੇ ਉਹ ਟੁੱਟ ਗਈ।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Along the way he met two men
-building a house. “Can we use that
-strong stick?” asked one.
+building a house. "Can we use that
+strong stick?" asked one.
 But the stick was not strong enough
 for building, and it broke.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	En chemin, il rencontra deux
 hommes, qui construisaient une
 maison. « Pouvons-nous utiliser ce
@@ -248,15 +257,15 @@ solide pour la construction, et il
 s'est rompu.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/pa/0291/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -264,22 +273,23 @@ s'est rompu.
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/07.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	"ਇਹ ਤੂੰ ਕੀ ਕੀਤਾ?" ਵੁਸੀ ਰੋਇਆ। “ਉਹ ਸੋਟੀ ਮੇਰੀ ਭੈਣ ਲਈ ਤੋਹਫ਼ਾ ਸੀ। ਫ਼ਲ ਤੋੜਨ ਵਾਲਿਆਂ ਨੇ ਮੈਨੂੰ ਸੋਟੀ ਦਿੱਤੀ ਸੀ ਕਿਉਕਿ ਉਹਨਾਂ ਨੇ ਕੇਕ ਲਈ ਅੰਡਾ ਤੋੜ ਦਿੱਤਾ ਸੀ। ਕੇਕ ਮੇਰੀ ਭੈਣ ਦੇ ਵਿਆਹ ਲਈ ਸੀ। ਹੁਣ ਕੋਈ ਅੰਡਾ, ਕੋਈ ਕੇਕ, ਅਤੇ ਕੋਈ ਤੋਹਫ਼ਾ ਨਹੀਂ ਹੈ। ਮੇਰੀ ਭੈਣ ਕੀ ਕਹੇਗੀ?”
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	“What have you done?” cried Vusi.
-“That stick was a gift for my sister.
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	"What have you done?" cried Vusi.
+"That stick was a gift for my sister.
 The fruit pickers gave me the stick
 because they broke the egg for the
 cake. The cake was for my sister's
 wedding. Now there is no egg, no
 cake, and no gift. What will my
-sister say?”
+sister say?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	« Qu'avez-vous fait ? » s'écria Vusi.
 « Ce bâton était un cadeau pour ma
 sœur. Les cueilleurs de fruits m'ont
@@ -292,15 +302,15 @@ de gâteau, et aucun cadeau.
 Que va dire ma sœur ?
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/pa/0291/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -308,21 +318,22 @@ Que va dire ma sœur ?
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/08.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਬਿਲਡਰਾਂ ਨੇ ਸੋਟੀ ਤੋੜਨ ਦਾ ਅਫ਼ਸੋਸ ਮੰਨਿਆ। "ਅਸੀਂ ਕੇਕ ਨਾਲ ਮਦਦ ਨਹੀਂ ਕਰ ਸਕਦੇ ਪਰ ਇਹ ਤੇਰੀ ਭੈਣ ਲਈ ਕੁਝ ਘਾਹ-ਫੂਸ ਹੈ,” ਇੱਕ ਨੇ ਕਿਹਾ। ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ ਵੁਸੀ ਆਪਣੀ ਯਾਤਰਾ ਤੇ ਜਾਰੀ ਰਿਹਾ।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	The builders were sorry for breaking
 the stick.
-“We can't help with the cake, but
-here is some thatch for your sister,”
+"We can't help with the cake, but
+here is some thatch for your sister,"
 said one.
 And so Vusi continued on his
 journey.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Les constructeurs étaient désolés
 d'avoir brisé le bâton.
 « Nous ne pouvons rien faire pour le
@@ -331,15 +342,15 @@ sœur, » dit l'un d'eux.
 Vusi continua sa route.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio08" src="http://storybookscanada.ca/audio/pa/0291/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -347,19 +358,20 @@ Vusi continua sa route.
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/09.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਰਸਤੇ ਵਿੱਚ, ਵੁਸੀ ਨੂੰ ਇੱਕ ਕਿਸਾਨ ਅਤੇ ਗਾਂ ਮਿਲੇ। "ਕੀ ਸੁਆਦੀ ਘਾਹ-ਫੂਸ ਹੈ, ਕੀ ਮੈਂ ਇੱਕ ਟੁਕੜਾ ਲੈ ਸਕਦਾ ਹਾਂ?" ਗਾਂ ਨੇ ਪੁੱਛਿਆ। ਪਰ ਘਾਹ-ਫੂਸ ਇੰਨ੍ਹੀ ਸਵਾਦ ਸੀ ਕਿ ਗਾਂ ਸਾਰੀ ਖਾ ਗਈ!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Along the way, Vusi met a farmer
-and a cow. “What delicious thatch,
-can I have a nibble?” asked the cow.
+and a cow. "What delicious thatch,
+can I have a nibble?" asked the cow.
 But the thatch was so tasty that the
 cow ate it all!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Sur le chemin, Vusi rencontra un
 fermier et une vache. « Quel foin
 délicieux, est-ce que je peux en
@@ -369,15 +381,15 @@ Mais le foin était si bon que la
 vache a tout mangé !
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio09" src="http://storybookscanada.ca/audio/pa/0291/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -385,14 +397,15 @@ vache a tout mangé !
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/10.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	"ਇਹ ਤੂੰ ਕੀ ਕੀਤਾ?" ਵੁਸੀ ਰੋਇਆ। “ਉਹ ਘਾਹ-ਫੂਸ ਮੇਰੀ ਭੈਣ ਲਈ ਤੋਹਫ਼ਾ ਸੀ। ਬਿਲਡਰਾਂ ਨੇ ਮੈਨੂੰ ਘਾਹ-ਫੂਸ ਦਿੱਤੀ ਸੀ ਕਿਉਕਿ ਉਹਨਾਂ ਨੇ ਫ਼ਲ ਤੋੜਨ ਵਾਲਿਆਂ ਦੀ ਸੋਟੀ ਤੋੜ ਦਿੱਤੀ ਸੀ। ਫ਼ਲ ਤੋੜਨ ਵਾਲਿਆਂ ਨੇ ਮੈਨੂੰ ਸੋਟੀ ਦਿੱਤੀ ਸੀ ਕਿਉਕਿ ਉਹਨਾਂ ਨੇ ਕੇਕ ਲਈ ਅੰਡਾ ਤੋੜ ਦਿੱਤਾ ਸੀ। ਕੇਕ ਮੇਰੀ ਭੈਣ ਦੇ ਵਿਆਹ ਲਈ ਸੀ। ਹੁਣ ਕੋਈ ਅੰਡਾ, ਕੋਈ ਕੇਕ, ਅਤੇ ਕੋਈ ਤੋਹਫ਼ਾ ਨਹੀਂ ਹੈ। ਮੇਰੀ ਭੈਣ ਕੀ ਕਹੇਗੀ?”
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	“What have you done?” cried Vusi.
-“That thatch was a gift for my
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	"What have you done?" cried Vusi.
+"That thatch was a gift for my
 sister. The builders gave me the
 thatch because they broke the stick
 from the fruit pickers. The fruit
@@ -401,9 +414,9 @@ they broke the egg for my sister's
 cake. The cake was for my sister's
 wedding. Now there is no egg, no
 cake, and no gift. What will my
-sister say?”
+sister say?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	« Qu'as-tu fait ? » s'écria Vusi.
 « Ce foin était un cadeau pour ma
 sœur. Les constructeurs m'ont
@@ -418,15 +431,15 @@ pas de gâteau, et aucun cadeau.
 Que va dire ma sœur ? »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio10" src="http://storybookscanada.ca/audio/pa/0291/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -434,18 +447,19 @@ Que va dire ma sœur ? »
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/11.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਗਾਂ ਨੇ ਲਾਲਚੀ ਹੋਣ ਦਾ ਅਫ਼ਸੋਸ ਮੰਨਿਆ। ਕਿਸਾਨ ਸਹਿਮਤ ਸੀ ਕਿ ਗਾਂ ਉਸ ਦੀ ਭੈਣ ਲਈ ਤੋਹਫ਼ੇ ਦੇ ਰੂਪ ਵਿੱਚ ਵੁਸੀ ਨਾਲ ਜਾ ਸਕਦੀ ਹੈ। ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ ਵੁਸੀ ਜਾਰੀ ਰਿਹਾ।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	The cow was sorry she was greedy.
 The farmer agreed that the cow
 could go with Vusi as a gift for his
 sister. And so Vusi carried on.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	La vache était désolée d'avoir été si
 gourmande. Le fermier décida que
 la vache devait accompagner Vusi
@@ -453,15 +467,15 @@ et être un cadeau pour sa sœur.
 Vusi poursuivit sa route.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio11" src="http://storybookscanada.ca/audio/pa/0291/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -469,12 +483,13 @@ Vusi poursuivit sa route.
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/12.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਪਰ ਗਾਂ ਰਾਤ ਦੇ ਖਾਂਣੇ ਸਮੇਂ ਵਾਪਸ ਕਿਸਾਨ ਕੋਲ ਭੱਜ ਗਈ। ਅਤੇ ਵੁਸੀ ਆਪਣੀ ਯਾਤਰਾ ਤੇ ਗੁੰਮ ਹੋ ਗਿਆ। ਉਹ ਆਪਣੀ ਭੈਣ ਦੇ ਵਿਆਹ ਵਿੱਚ ਬਹੁਤ ਦੇਰੀ ਨਾਲ ਪਹੁੰਚਿਆ। ਮਹਿਮਾਨ ਖਾਣਾਂ ਖਾ ਰਹੇ ਸਨ।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	But the cow ran back to the farmer
 at supper time.
 And Vusi got lost on his journey.
@@ -482,7 +497,7 @@ He arrived very late for his sister's
 wedding. The guests were already
 eating.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Mais là l'heure du souper la vache
 s'échappa et retourna chez le
 fermier. Et Vusi se perdit en chemin.
@@ -491,15 +506,15 @@ sa sœur. Les invités mangeaient
 déjà.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio12" src="http://storybookscanada.ca/audio/pa/0291/mp3/12.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('12')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -507,14 +522,15 @@ déjà.
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/13.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/13.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	"ਮੈਂ ਕੀ ਕਰਾਂ?" ਵੁਸੀ ਰੋਇਆ। "ਗਾਂ ਜੋ ਭੱਜ ਗਈ ਤੋਹਫ਼ਾ ਸੀ, ਬਿਲਡਰਾਂ ਦੀ ਦਿੱਤੀ ਘਾਹ-ਫੂਸ ਦੇ ਬਦਲੇ। ਬਿਲਡਰਾਂ ਨੇ ਮੈਨੂੰ ਘਾਹ-ਫੂਸ ਦਿੱਤੀ ਸੀ ਕਿਉਕਿ ਉਹਨਾਂ ਨੇ ਫ਼ਲ ਤੋੜਨ ਵਾਲਿਆਂ ਦੀ ਸੋਟੀ ਤੋੜ ਦਿੱਤੀ ਸੀ। ਫ਼ਲ ਤੋੜਨ ਵਾਲਿਆਂ ਨੇ ਮੈਨੂੰ ਸੋਟੀ ਦਿੱਤੀ ਸੀ ਕਿਉਕਿ ਉਹਨਾਂ ਨੇ ਕੇਕ ਲਈ ਅੰਡਾ ਤੋੜ ਦਿੱਤਾ ਸੀ। ਕੇਕ ਮੇਰੀ ਭੈਣ ਦੇ ਵਿਆਹ ਲਈ ਸੀ। ਹੁਣ ਕੋਈ ਅੰਡਾ, ਕੋਈ ਕੇਕ, ਅਤੇ ਕੋਈ ਤੋਹਫ਼ਾ ਨਹੀਂ ਹੈ।"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	“What shall I do?” cried Vusi.
-“The cow that ran away was a gift,
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	"What shall I do?" cried Vusi.
+"The cow that ran away was a gift,
 in return for the thatch the builders
 gave me. The builders gave me the
 thatch because they broke the stick
@@ -523,9 +539,9 @@ pickers gave me the stick because
 they broke the egg for the cake.
 The cake was for the wedding. Now
 there is no egg, no cake, and no
-gift.”
+gift."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	« Que dois-je faire ? » s'écria Vusi.
 « La vache qui s'est enfuie était un
 cadeau, en échange du foin, que les
@@ -541,15 +557,15 @@ Maintenant il n'y a pas d'œuf, pas
 de gâteau, et aucun cadeau ».
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio13" src="http://storybookscanada.ca/audio/pa/0291/mp3/13.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('13')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/13.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 
@@ -557,23 +573,24 @@ de gâteau, et aucun cadeau ».
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0291/14.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0291/14.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	ਵੁਸੀ ਦੀ ਭੈਣ ਨੇ ਥੋੜੀ ਦੇਰ ਲਈ ਸੋਚਿਆ, ਫਿਰ ਉਸ ਨੇ ਕਿਹਾ, “ਵੁਸੀ ਮੇਰੇ ਭਰਾ, ਮੈਂ ਸੱਚਮੁੱਚ ਤੋਹਫ਼ੇ ਬਾਰੇ ਪਰਵਾਹ ਨਹੀਂ ਕਰਦੀ। ਮੈਂ ਕੇਕ ਬਾਰੇ ਵੀ ਪਰਵਾਹ ਨਹੀਂ ਕਰਦੀ! ਆਪਾਂ ਸਭ ਇੱਥੇ ਇਕੱਠੇ ਹਾਂ, ਮੈਂ ਖੁਸ਼ ਹਾਂ। ਹੁਣ ਆਪਣੇ ਵਧੀਆ ਕੱਪੜੇ ਪਾ ਕੇ ਆ ਅਤੇ ਆਪਾਂ ਇਸ ਦਿਨ ਨੂੰ ਮਨਾਈਏ!” ਅਤੇ ਵੁਸੀ ਨੇ ਇਸ ਤਰ੍ਹਾਂ ਹੀ ਕੀਤਾ।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Vusi's sister thought for a while,
 then she said,
-“Vusi my brother, I don't really care
+"Vusi my brother, I don't really care
 about gifts. I don't even care about
 the cake! We are all here together, I
 am happy. Now put on your smart
 clothes and let's celebrate this
-day!”
+day!"
 And so that's what Vusi did.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	La sœur de Vusi réfléchit un
 moment, puis elle a dit,
 « Vusi mon frère, les cadeaux me
@@ -586,15 +603,15 @@ jour ! »
 Et c'est ce que fit Vusi.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Story credits" width="16px"></a>
-		<audio id="audio14" src="http://storybookscanada.ca/audio/pa/0291/mp3/14.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('14')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
+		<audio id="audio14" onended="resetbutton('14')" src="http://globalstorybooks.net/media/audio/pa/0291/mp3/14.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pa','en')" class="btn btn-lg lang-en" title="Switch between Punjabi and English">en</button>
-		<button onclick="switchlang('pa','fr')" class="btn btn-lg lang-fr" title="Switch between Punjabi and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pa,en','en,fr,pa')" class="btn btn-lg lang-primary" title="Switch between Punjabi and English">en</button>
+		<button onclick="switchlang('pa,fr','en,fr,pa')" class="btn btn-lg lang-secondary" title="Switch between Punjabi and French">fr</button>
 	</div>
 </div>
 

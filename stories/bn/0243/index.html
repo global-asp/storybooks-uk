@@ -5,12 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/storybooks-uk/favicon.ico?v=3" />
-	<title>ছুটির দিনে দাদুর সাথে - Storybooks UK</title>
+	<title>ছুটির দিনে দাদীমার সাথে - Storybooks UK</title>
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-uk//stories/bn/0243/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="https://global-asp.github.io/storybooks-uk/">
+	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/bn/0243/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
 	<script src="/storybooks-uk/js/sbc.js"></script>
 </head>
 
@@ -57,15 +58,17 @@
         <a class="btn btn-lg" href="/storybooks-uk/stories/bn" class="button">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1><span class="def">ছুটির দিনে দাদুর সাথে</span>
-<span class="en">Holidays with grandmother</span>
-<span class="fr">Les vacances avec grand-maman</span>
+		<h1><span class="def">ছুটির দিনে দাদীমার সাথে</span>
+			<span class="l1">Holidays with grandmother</span>
+			<span class="l2">Les vacances avec grand-maman</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/bn/0243/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/01.mp3"></audio>
+				<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+				<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by" width="38px"></span> Violet Otieno</h3>
@@ -73,18 +76,20 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-uk/css/global.svg" alt="Translated by" width="38px"></span> Asma Afreen</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-uk/stories/bn">Bengali</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-uk/stories/bn/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/bn/0243/0243.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/bn/0243/bn-0243_holidays.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	ওডোঙ্গ এবং এপিও তার বাবার সাথে শহরে বাস করত। তারা ছুটির জন্য অধীর আগ্রহে অপেক্ষা করত। শুধুমাত্র স্কুল ছুটির জন্য নয়, বরং তাদের দাদুর সাথে দেখা করার জন্য। তাদের দাদু বিরাট বিলের পাশে এক জেলেপাড়ায় বাস করতেন।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/02.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	ওডোঙ্গ এবং এপিও তাদের বাবার সাথে শহরে বাস করত। তারা ছুটির জন্য অধীর আগ্রহে অপেক্ষা করত। শুধুমাত্র স্কুল বন্ধ ছিল এজন্য নয়, বরং তাদের দাদীমার সাথে দেখা করার জন্য। তাদের দাদীমা বিরাট বিলের পাশে এক জেলেপাড়ায় বাস করতেন।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo and Apiyo lived in the
 city with their father.
 They looked forward to the
@@ -95,19 +100,19 @@ grandmother.
 She lived in a fishing village
 near a large lake.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo et Apiyo vivaient dans la ville avec leur père. Ils avaient hâte aux vacances. Non seulement parce que l'école serait fermée, mais parce qu'ils iraient rendre visite à leur grand-mère. Elle vivait dans un village de pêche près d'un grand lac.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/bn/0243/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -115,12 +120,13 @@ near a large lake.
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	ওডোঙ্গ এবং এপিও অনেক আনন্দিত ছিল কারণ এটি ছিল তাদের দাদুর সাথে আবার দেখা হবার সময়। আগের রাতে তারা তাদের সব ব্যাগ গুছিয়ে নেয় এবং গ্রামের দীর্ঘ যাত্রার জন্য প্রস্তুত হয়। রাতে খুশিতে তারা ঘুমোতেই পারেনি। তাই তারা সারারাত ছুটি নিয়ে গল্প করেই কাটিয়ে দেয়।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/03.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	ওডোঙ্গ এবং এপিও অনেক আনন্দিত ছিল কারণ এটি ছিল তাদের দাদীমার সাথে আবার দেখা হবার সময়। আগের রাতে তারা তাদের সব ব্যাগ গুছিয়ে নেয় এবং গ্রামের উদ্দেশ্যে দীর্ঘ যাত্রার জন্য প্রস্তুত হয়। খুশিতে তারা রাতে ঘুমোতেই পারেনি, এবং সারারাত ছুটি নিয়ে গল্প করেই কাটিয়ে দেয়।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo and Apiyo were excited
 because it was time to visit
 their grandmother again.
@@ -131,19 +137,19 @@ They could not sleep and talked
 the whole night about the
 holiday.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo et Apiyo avaient hâte parce que c'était le temps de rendre visite à leur grand-mère de nouveau. La veille, ils ont fait leurs valises et se sont préparés pour le long voyage jusqu'à son village. Ils ne pouvaient pas dormir et ils ont parlé toute la nuit à propos des vacances.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/bn/0243/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -151,12 +157,13 @@ holiday.
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/04.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	পরদিন ভোরে, তাদের বাবার গাড়িতে করে তারা গ্রামের পথে রওনা দেয়। তারা অনেক পাহাড়, বন্য জীবজন্তু এবং চা বাগান পাড়ি দিয়ে চলল। পথে তারা গাড়ি গণনা করল এবং অনেক গান গাইল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Early the next morning, they
 left for the village in their
 father's car.
@@ -166,19 +173,19 @@ plantations.
 They counted cars and sang
 songs.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Tôt le lendemain matin, ils sont partis vers le village dans la voiture de leur père. Ils ont vu des montagnes, des animaux sauvages et des plantations de thé. Ils ont compté des voitures et ont chanté des chansons.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/bn/0243/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -186,28 +193,29 @@ songs.
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/05.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	কিছুক্ষন পর তারা ক্লান্ত হয়ে ঘুমিয়ে পড়ল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	After a while, the children were
 tired and fell asleep.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Après un certain temps, les enfants se sont endormis, fatigués.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/bn/0243/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -215,12 +223,13 @@ tired and fell asleep.
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	বাবা গ্রামে পৌঁছে ওডোঙ্গ এবং এপিওকে ঘুম থেকে তুললেন। তারা তাদের দাদুমা, ন্যার-কান্যাদা কে এক গাছের নিচে বিশ্রামাবস্থায় দেখতে পেল। লূও গোত্রে ন্যার-কান্যাদা অর্থ হল "কান্যাদা গোত্রের মেয়ে"। তিনি একজন শক্তিশালী এবং সুন্দরী মহিলা ছিলেন।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/06.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	বাবা গ্রামে পৌঁছে ওডোঙ্গ এবং এপিওকে ঘুম থেকে তুললেন। তারা তাদের দাদীমা, ন্যার-কান্যাদা কে এক গাছের নিচে বিশ্রামাবস্থায় দেখতে পেল। লূও গোত্রে ন্যার-কান্যাদা অর্থ হল "কান্যাদা গোত্রের মেয়ে"। তিনি একজন শক্তিশালী এবং সুন্দরী মহিলা ছিলেন।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Father woke up Odongo and
 Apiyo as they arrived in the
 village.
@@ -228,24 +237,24 @@ They found Nyar-Kanyada, their
 grandmother, resting on a mat
 under a tree.
 Nyar-Kanyada in Luo, means
-‘daughter of the people of
+'daughter of the people of
 Kanyada'.
 She was a strong and beautiful
 woman.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Papa réveilla Odongo et Apiyo lorsqu'ils arrivèrent au village. Ils ont trouvé leur grand-mère Nyar-Kanyada assied sous un arbre. En le luo, Nyar-Kanyada veut dire « fille du peuple de Kanyada ». Elle était une femme belle et forte.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/bn/0243/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -253,12 +262,13 @@ woman.
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	ন্যার-কান্যাদা বাড়িতে তাদের স্বাগত জানালেন এবং আনন্দে গান গেয়ে সারা ঘরে নেচে বেড়ালেন। তার নাতি-নাতনীরা তাকে শহর থেকে আনা উপহারগুলি দিতে উৎসুক হয়ে উঠল। ওডোঙ্গ বলল,"প্রথমে আমার উপহারটি খুলুন!" এপিও বলল, "না, আমার উপহার প্রথম!"
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/07.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	ন্যার-কান্যাদা বাড়িতে তাদের স্বাগত জানালেন এবং আনন্দে গান গেয়ে সারা ঘরে নেচে বেড়ালেন। তার নাতি-নাতনীরা তাকে শহর থেকে আনা উপহারগুলো দিতে উৎসুক হয়ে উঠল। ওডোঙ্গ বলল,"প্রথমে আমার উপহারটি খুলুন!" এপিও বলল, "না, আমার উপহার প্রথম!"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Nyar-Kanyada welcomed them
 into the house and danced
 around the room singing with
@@ -266,23 +276,23 @@ joy.
 Her grandchildren were excited
 to give her the presents they
 brought from the city.
-“First open my gift,” said
+"First open my gift," said
 Odongo.
-“No, my gift first!” said Apiyo.
+"No, my gift first!" said Apiyo.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Nyar-Kanyada les a accueillis dans sa maison et a dansé tout autour de la salle en chantant de bonheur. Ses petits-enfants avaient hâte de lui donner les cadeaux qu'ils avaient apporté de la ville. « Ouvre mon cadeau en premier, » dit Odongo. « Non, ouvre le mien en premier ! » dit Apiyo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/bn/0243/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -290,30 +300,31 @@ Odongo.
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	উপহারগুলি খোলার পর, ন্যার-কান্যাদা ঐতিহ্যমতে তাঁর নাতি-নাতনীদের আশীর্বাদ করলেন।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/08.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	উপহারগুলো খোলার পর, ন্যার-কান্যাদা ঐতিহ্য অনুযায়ী তাঁর নাতি-নাতনীদের আশীর্বাদ করলেন।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	After she opened the presents,
 Nyar-Kanyada blessed her
 grandchildren in a traditional
 way.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Après avoir ouvert ses cadeaux, Nyar-Kanyada donna une bénédiction traditionnelle à ses petits-enfants.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio08" src="http://storybookscanada.ca/audio/bn/0243/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -321,29 +332,30 @@ way.
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/09.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	তারপর ওডোঙ্গ এবং এপিও বাহিরে গেল। তারা প্রজাপতি এবং পাখিদের পিছে ছুটে বেড়াল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Then Odongo and Apiyo went
 outside. They chased butterflies
 and birds.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Ensuite, Odongo et Apiyo sont sortis dehors. Ils ont poursuivit des papillons et des oiseaux.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio09" src="http://storybookscanada.ca/audio/bn/0243/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -351,29 +363,30 @@ and birds.
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/10.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	তারা গাছে চড়ল এবং বিলের পানি ছিটিয়ে খেলা করল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	They climbed trees and
 splashed in the water of the
 lake.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Ils ont grimpé des arbres et se sont éclaboussés dans l'eau du lac.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio10" src="http://storybookscanada.ca/audio/bn/0243/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -381,30 +394,31 @@ lake.
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/11.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	সন্ধ্যা নেমে এলে তারা সান্ধ্যভোজের জন্য বাড়ি ফিরল। ভোজ শেষ হবার আগেই তারা ঘুমিয়ে পড়তে নিল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	When it was dark they returned
 to the house for dinner.
 Before they could finish eating,
 they were falling asleep!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Quand la nuit tomba ils sont retournés à la maison pour souper. Avant qu'ils puissent finir de manger, ils s'endormaient !
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio11" src="http://storybookscanada.ca/audio/bn/0243/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -412,29 +426,30 @@ they were falling asleep!
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/12.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	পরদিন তাদের বাবা তাদের ন্যার-কান্যাদার সাথে রেখে শহরে ফিরে গেলেন।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	The next day, the children's
 father drove back to the city
 leaving them with Nyar-Kanyada.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Le lendemain, le père des enfants est retourné à la ville, les laissant avec Nyar-Kanyada.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio12" src="http://storybookscanada.ca/audio/bn/0243/mp3/12.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('12')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -442,12 +457,13 @@ leaving them with Nyar-Kanyada.
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/13.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	ওডোঙ্গ এবং এপিও তাদের দাদুমা কে গৃহস্থালির কাজে সাহায্য করল। তারা পানি এবং লাকড়ি নিয়ে আসল। তারা মুরগী থেকে ডিম সংগ্রহ করল এবং বাগান থেকে শাকসবজি তুলল।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/13.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	ওডোঙ্গ এবং এপিও তাদের দাদীমাকে গৃহস্থালির কাজে সাহায্য করল। তারা পানি এবং লাকড়ি নিয়ে আসল। তারা মুরগী থেকে ডিম সংগ্রহ করল এবং বাগান থেকে শাকসবজি তুলল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo and Apiyo helped their
 grandmother with household
 chores.
@@ -457,19 +473,19 @@ They collected eggs from the
 chickens and picked greens
 from the garden.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo et Apiyo ont aidé leur grand-mère à faire les tâches ménagères. Ils sont allés chercher de l'eau et du bois de chauffage. Ils ont recueilli les œufs des poules et ont ramassé des verts dans le jardin.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio13" src="http://storybookscanada.ca/audio/bn/0243/mp3/13.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('13')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/13.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -477,12 +493,13 @@ from the garden.
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/14.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	ন্যার-কান্যাদা তাঁর নাতি-নাতনীকে "স্টিউ" এর সাথে খাওয়ার নরম "উগালি" বানানো শেখালেন। তিনি তাদের দেখালেন কিভাবে মাছ ভাঁজার সাথে খেতে নারকেল ভাত বানাতে হয়।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/14.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	ন্যার-কান্যাদা তাঁর নাতি-নাতনীকে "স্টিউ" এর সাথে খাওয়ার নরম "উগালি" বানানো শেখালেন। তিনি তাদের দেখালেন কিভাবে ভাঁজা মাছের সাথে খেতে নারকেল ভাত বানাতে হয়।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Nyar-Kanyada taught her
 grandchildren to make soft ugali
 to eat with stew.
@@ -490,19 +507,19 @@ She showed them how to make
 coconut rice to eat with roast
 fish.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Nyar-Kanyada a montré à ses petits-enfants comment faire de l'ugali mou pour manger avec du ragoût. Elle leur a montré comment faire du riz de noix de coco pour manger avec du poisson grillé.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio14" src="http://storybookscanada.ca/audio/bn/0243/mp3/14.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('14')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text15" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio14" onended="resetbutton('14')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/14.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -510,12 +527,13 @@ fish.
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/15.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	এক সকালে, ওডোঙ্গ তার দাদুর গরুগুলো চরাতে নিয়ে গেল। গরুগুলো এক প্রতিবেশীর ক্ষেতে ঢুকে পড়ল। এতে প্রতিবেশী কৃষক ওডোঙ্গের উপর ক্ষুব্ধ হলেন। তিনি গরুগুলোকে তাঁর শস্য খেয়ে ফেলার অপরাধে রেখে দেবার হুমকি দিলেন। সেই দিনের পর, ছেলেটি খেয়াল রাখত যেন গরগুলো আর বিপদে না পড়ে।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/15.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	এক সকালে, ওডোঙ্গ তার দাদীমার গরুগুলো চরাতে নিয়ে গেল। গরুগুলো এক প্রতিবেশীর ক্ষেতে ঢুকে পড়ল। এতে প্রতিবেশী কৃষক ওডোঙ্গের উপর ক্ষুব্ধ হলেন। তিনি গরুগুলোকে তাঁর শস্য খেয়ে ফেলার অপরাধে রেখে দেবার হুমকি দিলেন। সেই দিনের পর, ছেলেটি খেয়াল রাখত যেন গরুগুলো আর বিপদে না পড়ে।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	One morning, Odongo took his
 grandmother's cows to graze.
 They ran onto a neighbour's
@@ -527,19 +545,19 @@ After that day, the boy made
 sure that the cows did not get
 into trouble again.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Un matin, Odongo a apporté les vaches de sa grand-mère paître. Elles se sont rendues dans la ferme d'un voisin. Le fermier était fâché envers Odongo. Il a menacé de garder les vaches pour avoir mangé ses récoltes. Après ce jour-là, le garçon a veillé à ce que les vaches n'attirent pas d'ennuis.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio15" src="http://storybookscanada.ca/audio/bn/0243/mp3/15.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('15')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text16" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio15" onended="resetbutton('15')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/15.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -547,12 +565,13 @@ into trouble again.
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/16.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	আরেকদিন, বাচ্চারা ন্যার-কান্যাদার সাথে বাজারে গেল। ন্যার-কান্যাদা বাজারে একটি শাকসবজি, চিনি  এবং সাবান বিক্রির দোকান দিলেন। এপিও ক্রেতাদের পণ্যের দাম বলতে পছন্দ করল। ওডোঙ্গ ক্রেতাদের পণ্য প্যাক করে দিল।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/16.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	আরেকদিন, বাচ্চারা ন্যার-কান্যাদার সাথে বাজারে গেল। ন্যার-কান্যাদা বাজারে একটি শাকসবজি, চিনি এবং সাবান বিক্রির দোকান দিলেন। এপিও ক্রেতাদের পণ্যের দাম বলতে পছন্দ করল। ওডোঙ্গ ক্রেতাদের পণ্য প্যাক করে দিল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	On another day, the children
 went to the marketplace with
 Nyar-Kanyada.
@@ -563,19 +582,19 @@ price of items.
 Odongo would pack the items
 that customers bought.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Un autre jour, les enfants sont allés au marché avec Nyar-Kanyada. Elle avait un stand pour vendre des légumes, du sucre et du savon. Apiyo aimait donner le prix des articles aux clients. Odongo emballait ce que les clients achetaient.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text17" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio16" src="http://storybookscanada.ca/audio/bn/0243/mp3/16.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('16')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text17" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio16" onended="resetbutton('16')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/16.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -583,30 +602,31 @@ that customers bought.
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/17.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	দিন শেষে তারা একসাথে চা পান করল। তারা দাদুকে তাঁর অর্জিত অর্থ গণনা করতে সাহায্য করল।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/17.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	দিন শেষে তারা একসাথে চা পান করল। তারা দাদীমাকে তাঁর অর্জিত অর্থ গণনা করতে সাহায্য করল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	At the end of the day they
 drank chai tea together.
 They helped grandmother to
 count the money she earned.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	À la fin de la journée, ils ont bu du thé chai ensemble. Ils ont aidé leur grand-mère à compter l'argent qu'elle avait gagné.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text18" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio17" src="http://storybookscanada.ca/audio/bn/0243/mp3/17.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('17')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text18" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio17" onended="resetbutton('17')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/17.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -614,12 +634,13 @@ count the money she earned.
 <hr>
 
 <div id="text18" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/18.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/18.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
 	কিন্তু খুব শীঘ্রই ছুটি শেষ হয়ে গেল এবং বাচ্চাদের শহরে ফিরে যাবার সময় হল। ন্যার-কান্যাদা ওডোঙ্গকে একটি টুপি এবং এপিওকে একটি সোয়েটার দিলেন। তিনি তাদের পথে খেতে খাবার দিয়ে দিলেন।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	But too soon the holidays were
 over and the children had to go
 back to the city.
@@ -628,19 +649,19 @@ cap and Apiyo a sweater.
 She packed food for their
 journey.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Trop tôt, les vacances étaient terminées et les enfants devaient retourner à la ville. Nyar-Kanyada donna une casquette à Odongo et un chandail à Apiyo. Elle emballa de la nourriture pour leur voyage.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text17" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text19" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio18" src="http://storybookscanada.ca/audio/bn/0243/mp3/18.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('18')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text17" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text19" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio18" onended="resetbutton('18')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/18.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -648,35 +669,36 @@ journey.
 <hr>
 
 <div id="text19" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/19.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	যখন তাদের বাবা তাদের নিতে আসলেন, তখন তারা  ফিরে যেতে চাচ্ছিলনা। বাচ্চারা ন্যার-কান্যাদাকে তাদের সাথে শহরে যেতে অনুরোধ করল। তিনি হাসলেন এবং বললেন, "আমি শহরের জন্য খুবই বৃদ্ধ। আমি তোমাদের আবার আমার গ্রামে আসার জন্য অপেক্ষা করব।"
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/19.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	যখন তাদের বাবা তাদের নিতে আসলেন, তখন তারা ফিরে যেতে চাচ্ছিল না। বাচ্চারা ন্যার-কান্যাদাকে তাদের সাথে শহরে যেতে অনুরোধ করল। তিনি হাসলেন এবং বললেন, "আমি শহরের জন্য খুবই বৃদ্ধ। আমি তোমাদের আবার আমার গ্রামে আসার জন্য অপেক্ষা করব।"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	When their father came to fetch
 them, they did not want to
 leave.
 The children begged Nyar-Kanyada to go with them to the
 city.
-She smiled and said, “I am too
+She smiled and said, "I am too
 old for the city. I will be waiting
 for you to come to my village
-again.”
+again."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Quand leur père est venu les chercher, ils ne voulaient pas partir. Les enfants ont supplié Nyar-Kanyada de venir avec eux à la ville. Elle sourit et dit, « Je suis trop vieille pour la ville. J'attendrai votre retour à mon village. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text18" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text20" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio19" src="http://storybookscanada.ca/audio/bn/0243/mp3/19.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('19')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text18" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text20" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio19" onended="resetbutton('19')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/19.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -684,28 +706,29 @@ again.”
 <hr>
 
 <div id="text20" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/20.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	ওডোঙ্গ এবং এপিও দুজনই দাদুমাকে শক্ত করে জড়িয়ে ধরল এবং বিদায় জানাল।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/20.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	ওডোঙ্গ এবং এপিও দুজনই দাদীমাকে শক্ত করে জড়িয়ে ধরল এবং বিদায় জানাল।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	Odongo and Apiyo both hugged
 her tightly and said goodbye.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo et Apiyo l'on tous les deux embrassé fort et lui on dit au revoir.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text19" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text21" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio20" src="http://storybookscanada.ca/audio/bn/0243/mp3/20.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('20')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text19" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text21" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio20" onended="resetbutton('20')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/20.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton20" onclick="playpause('20')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -713,12 +736,13 @@ her tightly and said goodbye.
 <hr>
 
 <div id="text21" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0243/21.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	যখন ওডোঙ্গ এবং এপিও স্কুলে ফিরে গেল, তখন তারা তাদের বন্ধুদের গ্রামের জীবন সম্পর্কে বলল। কিছু বাচ্চা মনে করল যে শহরের জীবন ভাল। অন্যরা ভাবল যে গ্রামের জীবন ভাল। কিন্তু, সবচেয়ে গুরুত্বপূর্ণ হল, সবাই একমত পোষণ করল যে ওডোঙ্গ এবং এপিওর একজন চমৎকার দাদুমা আছেন।
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/21.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
+
+	যখন ওডোঙ্গ এবং এপিও স্কুলে ফিরে গেল, তখন তারা তাদের বন্ধুদের গ্রামের জীবন সম্পর্কে বলল। কিছু বাচ্চা মনে করল যে শহরের জীবন ভাল। অন্যরা ভাবল যে গ্রামের জীবন ভাল। কিন্তু, সবচেয়ে গুরুত্বপূর্ণ হল, সবাই একমত পোষণ করল যে ওডোঙ্গ এবং এপিওর একজন চমৎকার দাদীমা আছেন।
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
 	When Odongo and Apiyo went
 back to school they told their
 friends about life in the village.
@@ -730,19 +754,19 @@ But most of all, everyone
 agreed that Odongo and Apiyo
 had a wonderful grandmother!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Quand Odongo et Apiyo sont retournés à l'école ils ont raconté leurs histoires de la vie dans le village à leurs amis. Certains enfants croyaient que la vie en ville était bonne. D'autres étaient de l'avis que le village était meilleur. Surtout, tous étaient d'accord que Odongo et Apiyo avaient une grand-mère merveilleuse !
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text20" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Story credits" width="16px"></a>
-		<audio id="audio21" src="http://storybookscanada.ca/audio/bn/0243/mp3/21.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('21')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text20" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
+		<audio id="audio21" onended="resetbutton('21')" src="http://globalstorybooks.net/media/audio/bn/0243/mp3/21.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton21" onclick="playpause('21')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('bn','en')" class="btn btn-lg lang-en" title="Switch between Bengali and English">en</button>
-		<button onclick="switchlang('bn','fr')" class="btn btn-lg lang-fr" title="Switch between Bengali and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('bn,en','en,fr,bn')" class="btn btn-lg lang-primary" title="Switch between Bengali and English">en</button>
+		<button onclick="switchlang('bn,fr','en,fr,bn')" class="btn btn-lg lang-secondary" title="Switch between Bengali and French">fr</button>
 	</div>
 </div>
 
@@ -763,6 +787,9 @@ had a wonderful grandmother!
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Read more <a href="/storybooks-uk/stories/bn/level4">level 4</a> stories:</h5>
+			<label class="chip"><a href="/storybooks-uk/stories/bn/0072/">হানিগাইড পাখির প্রতিশোধ</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/bn/0291/">ভুসির বোন যা বলল</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/bn/0294/">দাদীমার কলা</a></label>
 	</div>
 </div>
 <div>

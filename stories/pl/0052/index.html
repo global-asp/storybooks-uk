@@ -9,8 +9,9 @@
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-uk//stories/pl/0052/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="https://global-asp.github.io/storybooks-uk/">
+	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/pl/0052/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
 	<script src="/storybooks-uk/js/sbc.js"></script>
 </head>
 
@@ -57,15 +58,17 @@
         <a class="btn btn-lg" href="/storybooks-uk/stories/pl" class="button">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Simbegwire</span>
-<span class="en">Simbegwire</span>
-<span class="fr">Simbegwire</span>
+			<span class="l1">Simbegwire</span>
+			<span class="l2">Simbegwire</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/pl/0052/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/01.mp3"></audio>
+				<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+				<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by" width="38px"></span> Rukia Nantale</h3>
@@ -73,18 +76,20 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-uk/css/global.svg" alt="Translated by" width="38px"></span> Aleksandra Migorska</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-uk/stories/pl">Polish</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-uk/stories/pl/level5">Level 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/pl/0052/0052.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/pl/0052/pl-0052_simbegwire.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Simbegwire była bardzo smutna, kiedy zmarła jej matka. Ojciec Simbegwire starał się jak najlepiej zajmować córką. Powoli uczyli się na nowo żyć szczęśliwie, sami. Każdego ranka siadali razem i planowali kolejny dzień. Kazdego wieczoru, przygotowywali wspólnie obiad, po czym zmywali naczynia. Ojciec Simbegwire pomagał jej również z zadaniami domowymi.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/02.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Simbegwire była bardzo smutna, kiedy zmarła jej matka. Ojciec Simbegwire starał się jak najlepiej zajmować swoją córką. Powoli nauczyli się żyć na nowo sami i byli szczęśliwi. Każdego ranka siadali razem i planowali nowy dzień. Każdego wieczoru, przygotowywali wspólnie obiad i zmywali razem naczynia, a potem ojciec Simbegwire pomagał jej odrabiać lekcje.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	When Simbegwire's mother died,
 she was very sad. Simbegwire's
 father did his best to take care of
@@ -98,19 +103,19 @@ they washed the dishes,
 Simbegwire's father helped her with
 homework.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Quand la mère de Simbegwire décéda, Simbegwire fut très triste. Son père essaya de son mieux de prendre soin de sa fille. Lentement, ils apprirent comment se sentir heureux de nouveau, sans la mère de Simbegwire. Chaque matin, ils s'assoyaient et discutaient de la journée à venir. Chaque soir, ils cuisinaient le souper ensemble. Après avoir lavé la vaisselle, le père de Simbegwire l'aidait avec ses devoirs.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/pl/0052/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -118,15 +123,16 @@ homework.
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Pewnego dnia ojciec Simbegwire wrócił do domu później niż zwykle. "Gdzie jesteś dziecinko?" zawołał. Simbegwire podbiegła do taty, po czym zatrzymała się gdy zobaczyła, że on trzyma dłoń obcej kobiety. „Chciałbym abyś poznała kogoś wyjątkowego, moje dziecko. To jest Anita," powiedział, usmiechając się.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/03.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Pewnego dnia, ojciec Simbegwire wrócił do domu później niż zwykle. „Gdzie jesteś dziecko?” - zawołał. Simbegwire podbiegła do taty, ale zatrzymała się gdy zobaczyła, że ojciec trzyma za rękę obcą kobietę. „Moje dziecko, chciałbym abyś poznała kogoś wyjątkowego. To jest Anita” - powiedział, uśmiechając się.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	One day, Simbegwire's father came
-home later than usual. “Where are
-you my child?” he called.
+home later than usual. "Where are
+you my child?" he called.
 Simbegwire ran to her father. She
 stopped still when she saw that he
 was holding a woman's hand. "I
@@ -134,19 +140,19 @@ want you to meet someone special,
 my child. This is Anita," he said
 smiling.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Un jour, le père de Simbegwire retourna chez eux plus tard que d'habitude. « Où es-tu mon enfant ? » il demanda. Simbegwire se précipita vers son père. Elle s'arrêta en chemin quand elle vit qu'il tenait la main d'une femme. « Je veux te présenter quelqu'un de spécial, mon enfant. Voici Anita, » il dit en souriant.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/pl/0052/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -154,14 +160,15 @@ smiling.
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	„Witaj Simbegwire, Twoj tato wiele mi o Tobie opowiadał," powiedziała Anita. Lecz nie uśmiechnęła się, ani nie podała dziewczynce ręki. Ojciec Simbegwire był bardzo szczęśliwy i podekscytowany. Opowiadał jak wspaniale by było gdyby zamieszkali we trójkę i jak cudownie by im sie wspólnie żyło. „Moje dziecko, mam nadzieję że zaakceptujesz Anitę, jako swoją matkę", odrzekł.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/04.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	„Witaj Simbegwire, Twój tato wiele mi o Tobie opowiadał” - powiedziała Anita. Jednak Anita nie uśmiechnęła się, ani nie podała dziewczynce ręki. Ojciec Simbegwire był bardzo szczęśliwy i podekscytowany. Opowiadał, jak cudownie będzie gdy zamieszkają razem we trójkę. „Moje dziecko, mam nadzieję, że zaakceptujesz Anitę jako swoją matkę” - powiedział.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	“Hello Simbegwire, your father told
-me a lot about you,” said Anita. But
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	"Hello Simbegwire, your father told
+me a lot about you," said Anita. But
 she did not smile or take the girl's
 hand.
 Simbegwire's father was happy and
@@ -171,19 +178,19 @@ good their life would be. "My child, I
 hope you will accept Anita as your
 mother," he said.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	« Bonjour Simbegwire, ton père m'a beaucoup parlé de toi, » dit Anita. Mais elle ne sourit pas et ne serra pas la main de la fille. Le père de Simbegwire était content et excité. Il dit que les trois vivraient ensemble et qu'ils auraient une bonne vie. « Mon enfant, j'espère que tu accepteras Anita comme ta mère, » il dit.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/pl/0052/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -191,12 +198,13 @@ mother," he said.
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Życie Simbegwire zupełnie się odmieniło. Dziewczynka już nie miała czasu na poranne rozmowy z ojcem. Anita zlecała jej tak wiele robót w domu, ze Simbegwire nie miała sił wypełniać prac domowych zadanych ze szkoły. Chodziła spać, zaraz po kolacji. Jej jedynym ukojeniem był kolorowy kocyk, który dostała od matki. Ojciec Simbegwire zdawał się nie widzieć, że dziewczynka jest nieszczęśliwa.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/05.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Życie Simbegwire zupełnie się odmieniło. Dziewczynka nie miała już czasu na poranne rozmowy z ojcem. Anita zlecała jej tak wiele obowiązków domowych, że Simbegwire była zbyt zmęczona aby odrabiać lekcje. Chodziła spać zaraz po kolacji. Jej jedyną pociechą był kolorowy kocyk, który dostała od matki. Ojciec Simbegwire zdawał się nie widzieć, że dziewczynka jest nieszczęśliwa.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Simbegwire's life changed. She no
 longer had time to sit with her
 father in the mornings. Anita gave
@@ -210,19 +218,19 @@ Simbegwire's father did not seem to
 notice that his daughter was
 unhappy.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	La vie de Simbegwire changea. Elle n'avait plus le temps de s'asseoir avec son père le matin. Anita lui donnait tellement de tâches ménagères qu'elle était trop fatiguée pour faire ses devoirs le soir. Elle allait directement se coucher après le souper. Son seul confort était la couverture colorée que sa mère lui avait faite. Le père de Simbegwire ne semblait pas remarquer que sa fille était malheureuse.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/pl/0052/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -230,12 +238,13 @@ unhappy.
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Kilka miesięcy później, ojciec Simbegwire poinformował ją i Anitę, że musi wyjechać na jakiś czas. „Wiem, że będziecie się sobą nawzajem opiekować." Na twarzy Simbegwire pojawiło się wielkie rozczarowanie gdy usłyszała ojca plany, lecz on nic nie zauważył. Anita nic nie powiedziała, lecz również nie była szczęśliwa z tego powodu.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/06.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Kilka miesięcy później, ojciec powiedział Simbegwire i Anicie, że ze względu na pracę musi wyjechać na jakiś czas. „Wiem, że będziecie opiekować się sobą nawzajem” - powiedział. Na twarzy Simbegwire pojawiło się rozczarowanie, lecz ojciec tego nie zauważył. Anita nic nie powiedziała, ale również nie była szczęśliwa.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	After a few months, Simbegwire's
 father told them that he would be
 away from home for a while. "I have
@@ -246,19 +255,19 @@ father did not notice. Anita did not
 say anything. She was not happy
 either.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Après quelques mois, le père de Simbegwire annonça qu'il serait parti pour un certain temps. « Je dois voyager pour mon travail, » dit-il. « Mais je sais que vous allez vous occuper l'une de l'autre. » Le visage de Simbegwire s'allongea, mais son père ne remarqua pas. Anita ne dit rien. Elle n'était pas contente non plus.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/pl/0052/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -266,12 +275,13 @@ either.
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Życie Simbegwire stało się jeszcze cięższe. Jeśli dziewczynka nie ukończyła wszystkich robót wokół domu, badź narzekała, Anita biła ją. Pewnego wieczoru kobieta zjadła prawie całą kolację sama, zostawiając dziewczynce tylko resztki. Każdej nocy Simbegwire zasypiała z płaczem, tuląc sie do kocyka od mamy.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/07.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Życie Simbegwire stało się jeszcze cięższe. Jeśli nie skończyła wszystkich prac domowych lub narzekała, Anita biła ją. Kobieta zjadała prawie cały obiad sama, zostawiając dziewczynce tylko resztki. Każdej nocy Simbegwire zasypiała z płaczem, tuląc się do kocyka od mamy.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Things got worse for Simbegwire. If
 she didn't finish her chores, or she
 complained, Anita hit her. And at
@@ -282,19 +292,19 @@ Each night Simbegwire cried herself
 to sleep, hugging her mother's
 blanket.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Les choses empirèrent pour Simbegwire. Si elle ne terminait pas ses tâches, ou si elle se plaignait, Anita la frappait. Et pendant le souper, la femme mangeait la plupart de la nourriture, laissant Simbegwire avec peu de restes. Chaque nuit Simbegwire s'endormait en pleurant, embrassant la couverture de sa mère.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/pl/0052/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -302,32 +312,33 @@ blanket.
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Pewnego ranka, dziewczynka nieco zaspała. „Ty leniwa smarkulo!" krzyczała Anita, wyciagając ją z łóżka. Pamiątkowy i jakże drogocenny dla Simbegwire kocyk zaczepił się na gwoździu i rozdarł na pół.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/08.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Pewnego ranka, dziewczynka zaspała. „Ty leniwa dziewczyno!” - krzyczała Anita, wyciągając ją z łóżka. Bezcenny kocyk zaczepił się o gwóźdź i rozdarł na pół.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	One morning, Simbegwire was late
-getting out of bed. “You lazy girl!”
+getting out of bed. "You lazy girl!"
 Anita shouted. She pulled
 Simbegwire out of bed. The
 precious blanket caught on a nail,
 and tore in two.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Un matin, Simbegwire se leva en retard. « Paresseuse ! » cria Anita. Elle tira Simbegwire de son lit. La couverture précieuse resta accrochée sur un clou et déchira en deux.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio08" src="http://storybookscanada.ca/audio/pl/0052/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -335,12 +346,13 @@ and tore in two.
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Simbegwire była bardzo rozgoryczona. Zdecydowała, że ucieknie z domu. Spakowała kawałki kocyka, jedzenie i opuściła dom. Podążała drogą, którą odjechał ojciec.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/09.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Simbegwire była bardzo rozgoryczona. Zdecydowała, że ucieknie z domu. Spakowała kawałki kocyka, jedzenie i opuściła dom. Podążyła drogą, którą odjechał ojciec.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Simbegwire was very upset. She
 decided to run away from home.
 She took the pieces of her mother's
@@ -348,19 +360,19 @@ blanket, packed some food, and left
 the house. She followed the road
 her father had taken.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire était très bouleversée. Elle décida de se sauver de chez elle. Elle prit les morceaux de couverture de sa mère, emporta de la nourriture et quitta la maison. Elle suivit le chemin que son père avait pris.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio09" src="http://storybookscanada.ca/audio/pl/0052/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -368,37 +380,38 @@ her father had taken.
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Kiedy nadszedł wieczór, wspięła się na wysokie drzewo, niedalego strumyczka i przygotowała sobie łóżko na gałęzi. Kiedy zasypiała, nuciła sobie „Mamo, mamo, mamo, zostawiłaś mnie. Opuściłaś i nigdy już nie wróciłaś. Ojciec już mnie nie kocha. Matko, kiedy wrócisz do mnie? Zostawiłaś mnie."
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/10.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Kiedy nadszedł wieczór, wspięła się na wysokie drzewo niedaleko strumienia i przygotowała sobie łóżko w gałęziach drzewa. Kiedy zasypiała, nuciła: „Mamo, mamo, mamo, zostawiłaś mnie. Opuściłaś i nigdy już nie wróciłaś. Ojciec już mnie nie kocha. Matko, kiedy wrócisz do mnie? Zostawiłaś mnie.”
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	When it came to evening, she
 climbed a tall tree near a stream
 and made a bed for herself in the
 branches.
 As she went to sleep, she sang:
-“Maama, maama, maama, you left
+"Maama, maama, maama, you left
 me.
 You left me and never came back.
 Father doesn't love me anymore.
 Mother, when are you coming back?
-You left me.”
+You left me."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Quand le soir arriva, elle grimpa dans un arbre près d'un ruisseau et se fit un lit dans les branches. En s'endormant, elle chanta, « Maman, maman, maman, tu m'as quitté. Tu m'as quitté et tu n'es jamais retournée. Papa ne m'aime plus. Maman, quand reviens-tu ? Tu m'as quitté. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio10" src="http://storybookscanada.ca/audio/pl/0052/mp3/10.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('10')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/10.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -406,12 +419,13 @@ You left me.”
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Następnego ranka, Simbegwire znów nuciła swoją piosenkę. Kobiety, które właśnie przyszły uprać swoje ubrania nad strumyczkiem, usłyszały smutną piosenkę dobiegającą z wysokiego drzewa. Pomyślały, że to tylko liście szeleszczą, na wietrze i dalej pracowały, lecz jedna z kobiet ostrożnie przysłuchiwała się pieśni.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/11.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Następnego ranka, Simbegwire znów nuciła swoją piosenkę. Kobiety, które przyszły uprać swoje ubrania nad strumieniem, usłyszały smutną piosenkę dobiegającą z wysokiego drzewa. Pomyślały, że to tylko liście szeleszczą na wietrze i pracowały dalej, lecz jedna z kobiet uważnie przysłuchiwała się piosence.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	The next morning, Simbegwire sang
 the song again. When the women
 came to wash their clothes at the
@@ -423,19 +437,19 @@ with their work. But one of the
 women listened very carefully to
 the song.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Le lendemain matin, Simbegwire chanta encore la chanson. Quand les femmes arrivèrent au ruisseau pour laver leur linge, elles entendirent la chanson triste qui venait du grand arbre. Elles pensaient que c'était seulement le bruissement des feuilles et continuèrent leur travail. Mais une des femmes écouta la chanson attentivement.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text10" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio11" src="http://storybookscanada.ca/audio/pl/0052/mp3/11.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('11')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/11.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -443,36 +457,37 @@ the song.
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/12.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Gdy ta kobieta spojrzała w górę, na drzewo - ujrzała dziewczynkę i jej potargany kocyk. „Simbegwire, córeczko mojego brata!" zapłakała. Druga kobieta przestała prać i pomogła Simbegwire zejść z drzewa. Ciotka utuliła dziewczynkę i próbowała ją uspokoić.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/12.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Kobieta spojrzała w górę i w koronie drzewa ujrzała dziewczynkę i jej potargany kocyk. „Simbegwire, córeczko mojego brata!” - zapłakała. Inne kobiety przestały prać i pomogły Simbegwire zejść z drzewa. Ciotka przytuliła dziewczynkę i próbowała ją uspokoić.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	This woman looked up into the tree.
 When she saw the girl and the
 pieces of colourful blanket, she
-cried, “Simbegwire, my brother's
-child!”
+cried, "Simbegwire, my brother's
+child!"
 The other women stopped washing
 and helped Simbegwire to climb
 down from the tree. Her aunt
 hugged the little girl and tried to
 comfort her.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Cette femme jeta un coup d'œil dans l'arbre. Quand elle vit la fille et les morceaux de couverture colorés, elle cria, « Simbegwire, l'enfant de mon frère ! » Les autres femmes arrêtèrent de laver et aidèrent Simbegwire à descendre de l'arbre. Sa tante l'embrassa et essaya de la réconforter.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text11" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio12" src="http://storybookscanada.ca/audio/pl/0052/mp3/12.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('12')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/12.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -480,12 +495,13 @@ comfort her.
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/13.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Zabrała dziewczynkę do swojego domu, gdzie ją nakarmiła i ułożyła do łóżka z kocykiem matki. Tej nocy Simbegwire płakała przed zaśnięciem, ale były to łzy ukojenia. Wiedziała, ze ciotka dobrze się nią zaopiekuje.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/13.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Ciotka zabrała dziewczynkę do swojego domu, gdzie ją nakarmiła i położyła do łóżka razem z kocykiem matki. Tej nocy Simbegwire płakała przed zaśnięciem, ale były to łzy ulgi. Wiedziała, że ciotka się nią zaopiekuje.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Simbegwire's aunt took the child to
 her own house. She gave
 Simbegwire warm food, and tucked
@@ -496,19 +512,19 @@ went to sleep. But they were tears
 of relief. She knew her aunt would
 look after her.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	La tante de Simbegwire la mena chez elle. Elle donna à Simbegwire un repas chaud et la borda dans son lit avec la couverture de sa mère. Ce soir-là, Simbegwire s'endormit en pleurant. Mais ses larmes étaient des larmes de joie. Elle savait que sa tante prendrait soin d'elle.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text12" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio13" src="http://storybookscanada.ca/audio/pl/0052/mp3/13.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('13')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/13.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -516,12 +532,13 @@ look after her.
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/14.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Kiedy ojciec wrócił do domu, zastał pokój dziewczynki pusty. „Co się stało Anito?" zapytał z ciężkim sercem. Kobieta wytłumaczyła mu, ze córka uciekła. „Chciałam aby mnie szanowała", odpowiedziała, „ale możliwe, że byłam zbyt surowa." Ojciec Simbegwire wyszedł z domu i udał się w kierunku strumyczka. Potem poszedł w kierunku wioski, gdzie mieszkała jego siostra, by dowiedzieć się czy może ona widziała Simbegwire.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/14.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Kiedy ojciec Simbegwire wrócił do domu, zastał pokój dziewczynki pusty. „Co się stało Anito?” - zapytał z ciężkim sercem. Kobieta wytłumaczyła mu, że córka uciekła. „Chciałam aby mnie szanowała”, - odpowiedziała - „ale możliwe, że byłam zbyt surowa.” Ojciec Simbegwire wyszedł z domu i udał się w kierunku strumienia. Potem poszedł do wioski, gdzie mieszkała jego siostra, aby dowiedzieć się czy przypadkiem nie widziała Simbegwire.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	When Simbegwire's father returned
 home, he found her room empty.
 "What happened, Anita?" he asked
@@ -536,19 +553,19 @@ stream. He continued to his sister's
 village to find out if she had seen
 Simbegwire.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Quand le père de Simbegwire rentra chez lui, il trouva la chambre de sa fille vide. « Qu'est-ce qui est arrivé, Anita ? » il demanda, le cœur gros. La femme expliqua que Simbegwire s'était sauvée. « Je voulais qu'elle me respecte, » dit-elle. « Mais j'ai peut-être été trop sévère. » Le père de Simbegwire quitta la maison et se dirigea dans la direction du ruisseau. Il se rendit au village de sa sœur pour découvrir si elle avait vu Simbegwire.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text13" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio14" src="http://storybookscanada.ca/audio/pl/0052/mp3/14.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('14')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text15" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio14" onended="resetbutton('14')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/14.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -556,40 +573,41 @@ Simbegwire.
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/15.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Simbegwire bawiła się z kuzynem, gdy z daleka zauważyła tatę. Przestraszyła się, że może ojciec jest na nią zły i ukryła się w domu. Lecz ojciec rzekł: „Simbegwire, nie znalazłem Ci idealnej matki. Takiej, która by Cię kochała i rozumiała. Ja natomiast jestem z Ciebie bardzo dumny i kocham Cię." Ustalili, że Simbegwire zostanie z ciotką tak długo jak tylko zechce.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/15.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Simbegwire bawiła się z kuzynami, gdy z daleka zauważyła tatę. Ukryła się w domu, bo bała się, że ojciec jest na nią zły. Lecz ojciec powiedział: „Simbegwire, znalazłaś dla siebie idealną matkę, matkę która Cię kocha i rozumie. Jestem z Ciebie bardzo dumny i kocham Cię.” Uzgodnili, że Simbegwire zostanie z ciotką tak długo jak tylko zechce.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Simbegwire was playing with her
 cousins when she saw her father
 from far away. She was scared he
 might be angry, so she ran inside
 the house to hide.
 But her father went to her and said,
-“Simbegwire, you have found a
+"Simbegwire, you have found a
 perfect mother for yourself. One
 who loves you and understands
 you. I am proud of you and I love
-you.”
+you."
 They agreed that Simbegwire would
 stay with her aunt as long as she
 wanted to.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire jouait avec ses cousins quand elle vit son père de loin. Elle avait peur qu'il soit peut-être fâché, alors elle se précipita à l'intérieur de la maison pour se cacher. Mais son père vint la voir et lui dit, « Simbegwire, tu t'es trouvé une mère parfaite. Une mère qui t'aime et te comprends. Je suis fier de toi et je t'aime. » Ils se mirent d'accord que Simbegwire resterais avec sa tante aussi longtemps qu'elle veuille.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text14" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio15" src="http://storybookscanada.ca/audio/pl/0052/mp3/15.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('15')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text16" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio15" onended="resetbutton('15')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/15.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -597,12 +615,13 @@ wanted to.
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/16.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Ojciec odwiedział ją codziennie, aż kiedyś przyszedł z Anitą. Kobieta wyciągnęła dłoń w stronę dziewczynki i powiedziała: „Jest mi tak przykro dziecinko, myliłam się," płakała. „Czy dasz mi jeszcze jedną szanse?" Simbegwire spojrzała na zatroskaną twarz ojca, po czym powoli podeszła do Anity i przytuliła sie do niej.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/16.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	Ojciec odwiedzał ją codziennie. Pewnego dnia przyszedł z Anitą. Kobieta wyciągnęła dłoń w stronę dziewczynki i powiedziała: „Jest mi tak przykro maleńka, myliłam się”. „Czy dasz mi jeszcze jedną szansę?” Simbegwire spojrzała na zatroskaną twarz ojca, po czym powoli podeszła do Anity i przytuliła się do niej.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	Her father visited her every day.
 Eventually, he came with Anita. She
 reached out for Simbegwire's hand.
@@ -614,19 +633,19 @@ and his worried face. Then she
 stepped forward slowly and put her
 arms around Anita.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Son père lui rendit visite à chaque jour. Finalement, il vint avec Anita. Elle tendit la main vers celle de Simbegwire. « Je suis tellement désolée, petite, j'ai eu tords, » elle cria. « Me laisseras-tu essayer de nouveau ? » Simbegwire examina son père et son regard inquiet. Puis elle fit lentement un pas en avant et mit ses bras autour d'Anita.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text15" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text17" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio16" src="http://storybookscanada.ca/audio/pl/0052/mp3/16.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('16')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text17" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio16" onended="resetbutton('16')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/16.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -634,12 +653,13 @@ arms around Anita.
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0052/17.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Kolejnego tygodnia, Anita zaprosiła Simbegwire wraz z ciotką i kuzynami do domu na obiad. Co to była za uczta! Anita przygotowała ulubione potrawy dziewczynki, i każdy jadł do syta. Potem dzieci poszły sie bawić, a dorośli rozmawiali. Simbegwire była szczęśliwa. Zdecydawała, że już wkrótce wróci do domu rodzinnego, by zamieszkać z ojcem i macochą.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/17.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt def"><h3>
+
+	W następnym tygodniu, Anita zaprosiła Simbegwire oraz jej ciotkę i kuzynów do domu na obiad. Ale to była uczta! Anita przygotowała ulubione potrawy dziewczynki i każdy mógł najeść się do syta. Potem dzieci poszły się bawić, a dorośli rozmawiali. Simbegwire była szczęśliwa. Zdecydowała, że już niedługo wróci do domu rodzinnego, aby zamieszkać z ojcem i macochą.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
 	The next week, Anita invited
 Simbegwire, with her cousins and
 aunt, to the house for a meal. What
@@ -653,19 +673,19 @@ She decided that soon, very soon,
 she would return home to live with
 her father and her stepmother.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	La semaine suivante, Anita invita Simbegwire, ainsi que ses cousins et sa tante, chez elle pour un repas. Quel festin ! Anita prépara tous les plats favoris de Simbegwire et tous mangèrent jusqu'à temps qu'ils soient pleins. Ensuite, les enfants jouèrent tandis que les adultes parlaient. Simbegwire se sentait contente et courageuse. Elle décida que bientôt, très bientôt, elle retournerait chez elle pour vivre avec son père et sa belle-mère.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text16" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Story credits" width="16px"></a>
-		<audio id="audio17" src="http://storybookscanada.ca/audio/pl/0052/mp3/17.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('17')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
+		<audio id="audio17" onended="resetbutton('17')" src="http://globalstorybooks.net/media/audio/pl/0052/mp3/17.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 

@@ -5,12 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="/storybooks-uk/favicon.ico?v=3" />
-	<title>Neden Su Aygırlarının Tüyleri Yok - Storybooks UK</title>
+	<title>Neden su aygırlarının tüyleri yok - Storybooks UK</title>
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-uk//stories/tr/0111/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="https://global-asp.github.io/storybooks-uk/">
+	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/tr/0111/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
 	<script src="/storybooks-uk/js/sbc.js"></script>
 </head>
 
@@ -57,15 +58,17 @@
         <a class="btn btn-lg" href="/storybooks-uk/stories/tr" class="button">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1><span class="def">Neden Su Aygırlarının Tüyleri Yok</span>
-<span class="en">Why hippos have no hair</span>
-<span class="fr">Pourquoi les hippopotames n'ont pas de poils</span>
+		<h1><span class="def">Neden su aygırlarının tüyleri yok</span>
+			<span class="l1">Why hippos have no hair</span>
+			<span class="l2">Pourquoi les hippopotames n'ont pas de poils</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/tr/0111/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/01.mp3"></audio>
+				<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+				<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by" width="38px"></span> Basilio Gimo, David Ker</h3>
@@ -73,33 +76,35 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-uk/css/global.svg" alt="Translated by" width="38px"></span> Nahide Büşra Ertekin</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-uk/stories/tr">Turkish</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-uk/stories/tr/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/tr/0111/0111.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/tr/0111/tr-0111_hippos.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/02.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Bir gün, Tavşan nehir kenarında yürüyordu.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	One day, Rabbit was walking by the riverside.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Un jour, Lapin marchait le long de la rivière.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/tr/0111/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -107,27 +112,28 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/03.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Gezip dolaşmak ve güzel yeşil otlardan yemek için Su Aygırı da orada idi.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Hippo was there too, going for a stroll and eating some nice green grass.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Hippo était là aussi pour se promener et manger de la bonne herbe verte.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/tr/0111/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -135,29 +141,30 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/04.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Su Aygırı, Tavşan'ın orada olduğunu görmedi, ve yanlışlıkla Tavşan'ın ayağına bastı. Tavşan Su Aygırına bağırmaya başladı. "Sen, Su Aygırı! Ayağıma bastığını göremiyor musun?"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Hippo didn't see that Rabbit was there and she accidentally stepped on Rabbit's foot.
 
 Rabbit started screaming at Hippo, "You Hippo! Can't you see that you're stepping on my foot?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Hippo ne voyait pas que Lapin se trouvait là et elle piétina le pied de Lapin. Lapin cria et hurla « Hippo ! Tu vois que tu me piétines le pied ? »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/tr/0111/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -165,29 +172,30 @@ Rabbit started screaming at Hippo, "You Hippo! Can't you see that you're steppin
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/05.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Su Aygırı, Tavşandan özür diledi, "Çok özür dilerim. Seni görmedim. Lütfen beni affet!" Ama Tavşan Su Aygırını dinlemedi ve Su Aygırının yüzüne karşı bağırmaya devam etti, "Sen bunu bilerek yaptın! Gün gelecek göreceksin! Sen bunu ödeyeceksin!"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Hippo apologised to Rabbit, "I'm so sorry. I didn't see you. Please forgive me!"
 
 But Rabbit wouldn't listen and he shouted at Hippo, "You did that on purpose! Someday, you'll see! You're going to pay!"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	Hippo s'excusa à Lapin: « Je suis si désolé, mon ami. Je ne te voyais pas. Pardonne-moi, s'il-te-plaît ! » Mais Lapin n'écoutait pas et cria à Hippo: « Tu l'as fait exprès ! Un jour, tu verras ! Tu paieras pour ça ! »
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	Hippo s'excusa à Lapin : « Je suis si désolé, mon ami. Je ne te voyais pas. Pardonne-moi, s'il-te-plaît ! » Mais Lapin n'écoutait pas et cria à Hippo : « Tu l'as fait exprès ! Un jour, tu verras ! Tu paieras pour ça ! »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/tr/0111/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -195,29 +203,30 @@ But Rabbit wouldn't listen and he shouted at Hippo, "You did that on purpose! So
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/06.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Tavşan Ateş'ı bulmaya gitti, ve dedi ki "Git, ve ot yemek için sudan çıktığında Su Aygırı'nı yak. O benim üzerime bastı". Ateş cevapladı, "Problem değil Tavşan, arkadaşım benim. Ne istiyorsan yapacağım."
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Rabbit went to find Fire and said, "Go, burn Hippo when she comes out of the water to eat grass. She stepped on me!"
 
 Fire answered, "No problem, Rabbit, my friend. I'll do just what you ask."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	Puis Lapin partit chercher Feu et lui dit: « Va brûler Hippo quand elle sort de l'eau pour manger l'herbe. Elle m'a piétiné le pied ! » Feu répondit: « Pas de souci, Lapin, mon ami. Je ferai ce que tu as demandé. »
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	Puis Lapin partit chercher Feu et lui dit : « Va brûler Hippo quand elle sort de l'eau pour manger l'herbe. Elle m'a piétiné le pied ! » Feu répondit : « Pas de souci, Lapin, mon ami. Je ferai ce que tu as demandé. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/tr/0111/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -225,27 +234,28 @@ Fire answered, "No problem, Rabbit, my friend. I'll do just what you ask."
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/07.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Ardından, Su Aygırı nehirden uzakta ot yediği bir zaman "Harr" diye Ateş birden alev aldı. Alevler Su Aygırı'nın tüylerini yakmaya başladı.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Later, Hippo was eating grass far from the river when, "Whoosh!" Fire burst into flame. The flames began to burn Hippo's hair.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Plus tard, Hippo mangeait l'herbe loin de la rivière lorsque soudain « ZOUM ! » Feu s'enflamma. Les flammes commencèrent à brûler les poils de Hippo.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/tr/0111/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -253,29 +263,30 @@ Fire answered, "No problem, Rabbit, my friend. I'll do just what you ask."
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/08.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Su Aygırı ağlamaya başladı ve suya doğru koştu. Tüm tüyleri ateş tarafından yanmıştı. Su aygırı ağlamaya devam etti, "Tüylerim ateşte yandı! Tüylerimin hepsi gitti! Benim güzel tüylerim!"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Hippo started to cry and ran for the water. All her hair was burned off by the fire.
 
 Hippo kept crying, "My hair has burned in the fire! My hair is all gone! My beautiful hair!"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
-	Hippo se mit à pleurer et se réfugia à l'eau. Le feu avait brûlé tous ses cheveux. Hippo continua à pleurer: « Mes poils ont brûlé. Tu as brûlé tous mes poils ! Mes poils ont disparu ! Mes si beaux poils ! »
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
+	Hippo se mit à pleurer et se réfugia à l'eau. Le feu avait brûlé tous ses cheveux. Hippo continua à pleurer : « Mes poils ont brûlé. Tu as brûlé tous mes poils ! Mes poils ont disparu ! Mes si beaux poils ! »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text09" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio08" src="http://storybookscanada.ca/audio/tr/0111/mp3/08.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('08')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -283,29 +294,30 @@ Hippo kept crying, "My hair has burned in the fire! My hair is all gone! My beau
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0111/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0111/09.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
+
 	Tavşan, Su aygırı'nın tüyleri yandığı için mutluydu. Ve bugün bile, su aygırı, ateşten korkusu yüzünden, asla su kenarından uzağa gitmiyor.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
 	Rabbit was happy that Hippo's hair was burned.
 
 And to this day, for fear of fire, the hippo never goes far from the water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Lapin était content que les cheveux de Hippo étaient brulés. Et à ce jour, de crainte du feu, les hippopotames ne s'éloignent jamais de l'eau.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text08" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Story credits" width="16px"></a>
-		<audio id="audio09" src="http://storybookscanada.ca/audio/tr/0111/mp3/09.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('09')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/tr/0111/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('tr','en')" class="btn btn-lg lang-en" title="Switch between Turkish and English">en</button>
-		<button onclick="switchlang('tr','fr')" class="btn btn-lg lang-fr" title="Switch between Turkish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('tr,en','en,fr,tr')" class="btn btn-lg lang-primary" title="Switch between Turkish and English">en</button>
+		<button onclick="switchlang('tr,fr','en,fr,tr')" class="btn btn-lg lang-secondary" title="Switch between Turkish and French">fr</button>
 	</div>
 </div>
 
@@ -326,9 +338,16 @@ And to this day, for fear of fire, the hippo never goes far from the water.
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Read more <a href="/storybooks-uk/stories/tr/level2">level 2</a> stories:</h5>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0337/">Mum çocuklar</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0095/">Zama harika bir çocuk</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0089/">Khalai bitkilerle konuşuyor</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/tr/0027/">Karar</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0296/">Muz satıcısı Tom</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0342/">Ceza</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0210/">Tingi ve inekler</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/tr/0004/">Keçi, Köpek ve İnek</a></label>
-			<label class="chip"><a href="/storybooks-uk/stories/tr/0001/">Çok Uzun Bir Adam</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0234/">Futbol yıldızı Andiswa</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/tr/0001/">Çok uzun bir adam</a></label>
 	</div>
 </div>
 <div>

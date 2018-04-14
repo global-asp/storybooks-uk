@@ -9,8 +9,9 @@
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
-	<link rel="canonical" href="https://global-asp.github.io/storybooks-uk//stories/pl/0006/">
-	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="https://global-asp.github.io/storybooks-uk/">
+	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
+	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/pl/0006/">
+	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
 	<script src="/storybooks-uk/js/sbc.js"></script>
 </head>
 
@@ -57,15 +58,17 @@
         <a class="btn btn-lg" href="/storybooks-uk/stories/pl" class="button">Back to stories list</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0006/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Anansi i Wiedza</span>
-<span class="en">Anansi and Wisdom</span>
-<span class="fr">Anansi et la sagesse</span>
+			<span class="l1">Anansi and Wisdom</span>
+			<span class="l2">Anansi et la sagesse</span>
 			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-				<button class=" btn btn-lg" onclick="playpause('')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
-				<audio id="audio" src="http://storybookscanada.ca/audio/pl/0006/mp3/01.mp3"></audio>
+				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/pl/0006/mp3/01.mp3"></audio>
+				<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+				<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by" width="38px"></span> Ghanaian folktale</h3>
@@ -73,18 +76,20 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-uk/css/global.svg" alt="Translated by" width="38px"></span> Aleksandra Migorska</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-uk/stories/pl">Polish</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-uk/stories/pl/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://storybookscanada.ca/audio/pl/0006/0006.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/pl/0006/pl-0006_anansi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0006/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Dawno dawno temu ludzie nic nie wiedzieli. Nie wiedzieli jak uprawiać rośliny, splatać tkaninę, lub jak robić narzędzia żelazne. Ale poczciwy Nyame wysoko w niebie posiadał wiedzę całego świata. Trzymał ją bezpiecznie w glinianym kociołku.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/02.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
+
+	Dawno, dawno temu ludzie nic nie wiedzieli. Nie potrafili uprawiać roślin, tkać tkanin, ani wytwarzać narzędzi żelaznych. Bóg Nyame wysoko w niebie posiadał wiedzę całego świata. Przechowywał ją bezpiecznie w glinianym kociołku.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Long long ago people didn't
 know anything. They didn't
 know how to plant crops, or
@@ -94,19 +99,19 @@ The god Nyame up in the sky
 had all the wisdom of the world.
 He kept it safe in a clay pot.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Il y a longtemps, les gens ne savaient rien. Ils ne savaient pas comment faire une récolte, ou comment tisser, ou comment fabriquer des outils de fer. Le dieu Nyame dans le ciel avait toute la sagesse dans le monde. Il la gardait en sécurité dans un pot en argile.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text01" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio02" src="http://storybookscanada.ca/audio/pl/0006/mp3/02.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('02')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/pl/0006/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -114,12 +119,13 @@ He kept it safe in a clay pot.
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0006/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Pewnego dnia Nyame zdecydował, że odda swój kociołek wiedzy Anansiowi. Za każdym razem, gdy Anansi zaglądał do kociołka, uczył się czegoś nowego. Było to bardzo ekscytujące!
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/03.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
+
+	Pewnego dnia Nyame zdecydował, że odda swój kociołek wiedzy Anansi’owi. Za każdym razem, gdy Anansi zaglądał do kociołka, uczył się czegoś nowego. Było to bardzo ekscytujące!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	One day, Nyame decided that
 he would give the pot of
 wisdom to Anansi.
@@ -127,19 +133,19 @@ Every time Anansi looked in the
 clay pot, he learned something
 new. It was so exciting!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Un jour, Nyame décida qu'il donnerait le pot de sagesse à Anansi. Chaque fois qu'Anansi regardait dans le pot en argile, il apprenait quelque chose de nouveau. C'était tellement excitant !
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text02" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio03" src="http://storybookscanada.ca/audio/pl/0006/mp3/03.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('03')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/pl/0006/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -147,16 +153,17 @@ new. It was so exciting!
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0006/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Chciwy Anansi knuł: "Schowam kociołek na czubku wysokiego drzewa. Wtedy będę miał go tylko dla siebie!" Obwiązał kociołek sznurkiem i przywiązał go do swojego brzucha. Gdy zaczął wspinać się na drzewo, kociołek ciągle uderzał go w kolana - nie była to łatwa wspinaczka.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/04.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
+
+	Chciwy Anansi pomyślał: „Schowam kociołek na czubku wysokiego drzewa. Wtedy będę miał go tylko dla siebie!” Uprządł długą nić, obwiązał nią kociołek i przywiązał go do swojego brzucha. Anansi zaczął wspinać się na drzewo, ale nie była to łatwa wspinaczka bo kociołek ciągle uderzał go w kolana.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	Greedy Anansi thought, “I'll
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Greedy Anansi thought, "I'll
 keep the pot safe at the top of a
 tall tree. Then I can have it all
-to myself!”
+to myself!"
 He spun a long thread, wound it
 round the clay pot, and tied it to
 his stomach.
@@ -165,19 +172,19 @@ it was hard climbing the tree
 with the pot bumping him in the
 knees all the time.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Anansi l'avide pensa, « Je vais garder le pot en sécurité en haut d'un grand arbre. Comme ça je pourrai l'avoir à moi seul ! » Il fila un fil long, l'enroula autour du pot en argile et l'attacha à son estomac. Il commença à grimper l'arbre. Mais c'était difficile de grimper l'arbre avec le pot qui le cognait dans les genoux tout le temps.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text03" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio04" src="http://storybookscanada.ca/audio/pl/0006/mp3/04.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('04')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/pl/0006/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -185,35 +192,36 @@ knees all the time.
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0006/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Przez ten cały czas, synek Anansiego stał u podstawy drzewa i obserwował swego ojca. Nagle powiedział: "Czy nie było by Ci łatwiej gdybyś przywiązał kociołek do swoich pleców?" Anansi przywiązał kociołek do pleców i faktycznie wspinaczka stała się dużo łatwiejsza.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/05.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
+
+	Przez cały czas, synek Anansi’ego stał pod drzewem i obserwował swojego ojca. Nagle powiedział: „Czy nie byłoby Ci łatwiej wspiąć się na drzewo, gdybyś przywiązał kociołek do swoich pleców?” Anansi przywiązał kociołek do pleców i faktycznie wspinaczka stała się dużo łatwiejsza.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	All the time Anansi's young son
 had been standing at the
 bottom of the tree watching. He
-said, “Wouldn't it be easier to
+said, "Wouldn't it be easier to
 climb if you tied the pot to your
-back instead?”
+back instead?"
 Anansi tried tying the clay pot
 full of wisdom to his back, and it
 really was a lot easier.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Tout le long, le jeune fils d'Anansi avait été debout en bas de l'arbre en train de regarder. « Ne serait-il pas plus facile d'attacher le pot à ton dos plutôt ? » Anansi essaya d'attacher le pot rempli de sagesse à son dos et ce fut vraiment plus facile.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text04" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio05" src="http://storybookscanada.ca/audio/pl/0006/mp3/05.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('05')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/pl/0006/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -221,36 +229,37 @@ really was a lot easier.
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0006/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Bardzo prędko dotarł na czubek drzewa. Nagle zatrzymał się i pomyślał: "To ja powinienem być tym mądrym a to mój syn okazał się mądrzejszy ode mnie!" Anansi był tak wściekły, że zrzucił kociołek z drzewa.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/06.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
+
+	Bardzo szybko dotarł na czubek drzewa. Nagle zatrzymał się i pomyślał: „To ja powinienem być tym, który posiada całą mądrość, a to mój syn okazał się mądrzejszy ode mnie!” Anansi rozzłościł się tak bardzo, że zrzucił kociołek z drzewa.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	In no time he reached the top of
 the tree.
 But then he stopped and
-thought, “I'm supposed to be
+thought, "I'm supposed to be
 the one with all the wisdom,
 and here my son was cleverer
-than me!”
+than me!"
 Anansi was so angry about this
 that he threw the clay pot down
 out of the tree.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Dans peu de temps il atteignit le sommet de l'arbre. Mais il arrêta et pensa, « Je suis supposé être celui avec toute la sagesse et voici que mon fils fut plus sage que moi ! » Anansi était tellement fâché à propos de ceci qu'il lança le pot en argile en bas de l'arbre.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text05" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#text07" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Next page" width="16px"></a>
-		<audio id="audio06" src="http://storybookscanada.ca/audio/pl/0006/mp3/06.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('06')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/pl/0006/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -258,12 +267,13 @@ out of the tree.
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="http://storybookscanada.ca/images/0006/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 def"><h3>
-	Kociołek wiedzy rozbił się uderzając o ziemię. Wiedza wydostała się na zewnątrz i była dostępna dla wszystkich i wszyscy mogli się nią dzielić. I właśnie w ten sposób ludzie nauczyli się jak uprawiać rośliny, splatać tkaninę, jak robić narzędzia żelazne i wielu innych zajęć, które ludzie wiedzą jak dziś wykonywać.
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/07.jpg"></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
+
+	Kociołek wiedzy uderzył o ziemię i rozbił się na kawałki. Wiedza stała się dostępna dla wszystkich i wszyscy mogli się nią teraz dzielić. I właśnie w ten sposób ludzie nauczyli się jak uprawiać ziemię, tkać tkaniny, wytwarzać narzędzia żelazne oraz wielu innych zajęć, które ludzie wiedzą jak wykonywać.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	It smashed into pieces on the
 ground. The wisdom was free
 for everyone to share.
@@ -274,19 +284,19 @@ make iron tools, and all the
 other things that people know
 how to do.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 fr"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Le pot cassa en mille morceaux sur le sol. La sagesse fut disponible pour tous à partager. Et c'est ainsi que les gens apprirent à cultiver, tisser, fabriquer des outils de fer, et toutes les autres choses que les gens savent comment faire.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
-	<div class="btn-group">
-		<a href="#text06" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-up.svg" alt="Previous page" width="16px"></a>
-		<a href="#colophon" class="btn btn-lg"><img src="/storybooks-uk/css/arrow-down.svg" alt="Story credits" width="16px"></a>
-		<audio id="audio07" src="http://storybookscanada.ca/audio/pl/0006/mp3/07.mp3"></audio>
-		<button class=" btn btn-lg" onclick="playpause('07')"><img src="/storybooks-uk/css/volume-up.svg" alt="Play/pause" width="16px"></button>
+	<div class="btn-group switcher-group">
+		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
+		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/pl/0006/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
-	<div class="btn-group">
-		<button onclick="switchlang('pl','en')" class="btn btn-lg lang-en" title="Switch between Polish and English">en</button>
-		<button onclick="switchlang('pl','fr')" class="btn btn-lg lang-fr" title="Switch between Polish and French">fr</button>
+	<div class="btn-group switcher-group">
+		<button onclick="switchlang('pl,en','en,fr,pl')" class="btn btn-lg lang-primary" title="Switch between Polish and English">en</button>
+		<button onclick="switchlang('pl,fr','en,fr,pl')" class="btn btn-lg lang-secondary" title="Switch between Polish and French">fr</button>
 	</div>
 </div>
 
@@ -308,12 +318,12 @@ how to do.
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>Read more <a href="/storybooks-uk/stories/pl/level3">level 3</a> stories:</h5>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0110/">Ziarenko: Opowieść Wangari Maathai</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/pl/0066/">Nozibele i jej trzy włosy</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0141/">Kurczak i Stonoga</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0201/">Ośle Dziecko</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0315/">Piosenka Sakimy</a></label>
-			<label class="chip"><a href="/storybooks-uk/stories/pl/0324/">Dzień w którym opuściłem dom</a></label>
+			<label class="chip"><a href="/storybooks-uk/stories/pl/0324/">Dzień, w którym opuściłem dom i wyjechałem do miasta</a></label>
 			<label class="chip"><a href="/storybooks-uk/stories/pl/0158/">Kura i Orlica</a></label>
-			<label class="chip"><a href="/storybooks-uk/stories/pl/0066/">Nozibele i jej trzy włosy</a></label>
 	</div>
 </div>
 <div>
