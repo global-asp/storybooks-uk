@@ -15,7 +15,8 @@
 	<title>یک دانه ی کوچک: داستان وانگاری ماتای - Storybooks UK</title>
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
-	<link rel="stylesheet" href="/storybooks-uk/css/spectre-ar.min.css">
+	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-uk/css/gsn-ar.min.css">
 	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/fa/0110/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
@@ -80,18 +81,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fa/0110/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-uk/audio/fa/0110/mp3/01.mp3"></audio>
 			<button onclick="switchlang('fa,en','en,fr,fa')" class="btn btn-lg lang-primary" title="Switch between Persian and English">en</button>
 			<button style="display:none" onclick="switchlang('fa,fr','en,fr,fa')" class="btn btn-lg lang-secondary" title="Switch between Persian and French">fr</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by"></span> Nicola Rijsdijk</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-uk/css/art.svg" alt="Illustrated by"></span> Maya Marshak</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-uk/css/global.svg" alt="Translated by"></span> Marzieh Mohammadian Haghighi</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-uk/css/megaphone.svg" alt="Read by"></span> Nasim Peikazadi</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language"></span> <a href="/storybooks-uk/stories/fa">Persian</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level"></span> <a href="/storybooks-uk/stories/fa/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fa/0110/fa-0110_wangari.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/pencil.svg" alt="Written by"></span> Nicola Rijsdijk</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/art.svg" alt="Illustrated by"></span> Maya Marshak</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/global.svg" alt="Translated by"></span> Marzieh Mohammadian Haghighi</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/megaphone.svg" alt="Read by"></span> Nasim Peikazadi</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/language.svg" alt="Language"></span> <a href="/storybooks-uk/stories/fa">Persian</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/level.svg" alt="Level"></span> <a href="/storybooks-uk/stories/fa/level3">Level 3</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="/0110/fa-0110_wangari.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -107,8 +108,7 @@
 	In a village on the slopes of Mount Kenya in East Africa, a little girl worked in the fields with her mother. Her name was Wangari.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Dans un village situé sur les flancs du Mont Kenya en Afrique de l’Est, une petite fille
-travaillait dans les champs avec sa mère. Son nom était Wangari.
+	Dans un village situé sur les flancs du Mont Kenya en Afrique de l’Est, une petite fille travaillait dans les champs avec sa mère. Son nom était Wangari.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -137,8 +137,7 @@ travaillait dans les champs avec sa mère. Son nom était Wangari.
 	Wangari loved being outside. In her family’s food garden she broke up the soil with her machete. She pressed tiny seeds into the warm earth.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Wangari aimait beaucoup être dehors. Dans le potager de sa famille, elle faisait des trous
-dans le sol avec sa machette. Elle enfouissait des petites graines dans la terre chaude.
+	Wangari aimait beaucoup être dehors. Dans le potager de sa famille, elle faisait des trous dans le sol avec sa machette. Elle enfouissait des petites graines dans la terre chaude.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -169,9 +168,7 @@ dans le sol avec sa machette. Elle enfouissait des petites graines dans la terre
 She would follow the narrow paths through the fields, crossing rivers as she went.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Son moment favori de la journée était juste après le coucher du soleil. Quand il faisait trop
-nuit pour voir les plantes, Wangari savait qu’il était l’heure de rentrer à la maison. Pour
-rentrer, elle devait suivre des sentiers étroits à travers champs et traverser des rivières.
+	Son moment préféré de la journée était juste après le coucher du soleil. Quand il faisait trop nuit pour voir les plantes, Wangari savait qu’il était l’heure de rentrer à la maison. Pour rentrer, elle devait suivre des sentiers étroits à travers champs et traverser des rivières.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -202,9 +199,7 @@ rentrer, elle devait suivre des sentiers étroits à travers champs et traverser
 When she was seven years old, her big brother persuaded her parents to let her go to school.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Wangari était une enfant intelligente et ne pouvait plus attendre pour aller à l’école. Mais
-sa mère et son père voulaient qu’elle reste à la maison pour les aider.
-Quand elle eut sept ans, son grand frère persuada ses parents de la laisser aller à l’école.
+	Wangari était une enfant intelligente et avait hâte d’aller à l’école. Mais sa mère et son père voulaient qu’elle reste à la maison pour les aider. Quand elle eut sept ans, son grand frère persuada ses parents de la laisser aller à l’école.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -235,10 +230,7 @@ Quand elle eut sept ans, son grand frère persuada ses parents de la laisser all
 Wangari was excited! She wanted to know more about the world.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Elle aimait apprendre !
-Wangari apprenait de plus en plus avec chaque livre qu’elle lisait.
-Elle travaillait si bien à l’école qu’elle fut invitée à étudier aux Etats Unis d’Amérique.
-Wangari était enthousiaste ! Elle voulait en savoir plus sur le monde.
+	Elle aimait apprendre ! Wangari apprenait de plus en plus avec chaque livre qu’elle lisait. Elle travaillait si bien à l’école qu’elle fut invitée à étudier aux Etats Unis d’Amérique. Wangari était enthousiaste ! Elle voulait en savoir plus sur le monde.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -267,9 +259,7 @@ Wangari était enthousiaste ! Elle voulait en savoir plus sur le monde.
 	At the American university Wangari learnt many new things. She studied plants and how they grow. And she remembered how she grew: playing games with her brothers in the shade of the trees in the beautiful Kenyan forests.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	A l’université américaine, Wangari apprit plein de nouvelles choses. Elle étudia les plantes
-et la manière dont elles grandissent. Et elle se rappela comment elle avait grandi : en
-jouant avec ses frères à l’ombre des arbres dans les magnifiques forêts du Kenya.
+	A l’université américaine, Wangari apprit beaucoup de choses nouvelles. Elle étudia les plantes et la manière dont elles grandissent. Et elle se rappela comment elle avait grandi : en jouant avec ses frères à l’ombre des arbres dans les magnifiques forêts du Kenya.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -300,9 +290,7 @@ jouant avec ses frères à l’ombre des arbres dans les magnifiques forêts du 
 The more she learnt, the more she remembered her African home.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Plus elle apprenait, plus elle réalisait qu’elle aimait les habitants du Kenya. Elle voulait
-qu’ils soient heureux et libres.
-Plus elle apprenait, plus elle se rappelait son foyer africain.
+	Plus elle apprenait, plus elle réalisait qu’elle aimait les habitants du Kenya. Elle voulait qu’ils soient heureux et libres. Plus elle apprenait, plus elle se rappelait son foyer africain.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -331,10 +319,7 @@ Plus elle apprenait, plus elle se rappelait son foyer africain.
 	When she had finished her studies, she returned to Kenya. But her country had changed. Huge farms stretched across the land. Women had no wood to make cooking fires. The people were poor and the children were hungry.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Quand elle eut terminé ses études, elle retourna au Kenya. Mais son pays avait changé. De
-larges fermes s’étendaient à travers la campagne.
-Les femmes n’avaient plus de bois pour cuire les aliments. Les gens étaient pauvres et les
-enfants avaient toujours faim.
+	Quand elle eut terminé ses études, elle retourna au Kenya. Mais son pays avait changé. De larges fermes s’étendaient à travers la campagne. Les femmes n’avaient plus de bois pour cuire les aliments. Les gens étaient pauvres et les enfants avaient toujours faim.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -363,10 +348,7 @@ enfants avaient toujours faim.
 	Wangari knew what to do. She taught the women how to plant trees from seeds. The women sold the trees and used the money to look after their families. The women were very happy. Wangari had helped them to feel powerful and strong.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Wangari savait ce qu’il fallait faire. Elle apprit aux femmes comment planter des arbres en
-utilisant des graines. Les femmes vendirent les arbres et utilisèrent l’argent pour faire vivre
-leurs familles. Les femmes étaient très heureuses. Wangari les avait aidées à se sentir
-puissantes et fortes.
+	Wangari savait ce qu’il fallait faire. Elle apprit aux femmes comment planter des arbres en utilisant des graines. Les femmes vendirent les arbres et utilisèrent l’argent pour faire vivre leurs familles. Les femmes étaient très heureuses. Wangari les avait aidées à se sentir puissantes et fortes.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -395,9 +377,7 @@ puissantes et fortes.
 	As time passed, the new trees grew into forests, and the rivers started flowing again. Wangari’s message spread across Africa. Today, millions of trees have grown from Wangari’s seeds.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Avec le temps, les nouveaux arbres se transformèrent en forêts, et les rivières
-recommencèrent à couler. Le message de Wangari traversa toute l’Afrique. Aujourd’hui des
-millions d’arbres ont grandi grâce aux graines de Wangari.
+	Avec le temps, les nouveaux arbres se transformèrent en forêts, et les rivières recommencèrent à couler. Le message de Wangari traversa toute l’Afrique. Aujourd’hui des millions d’arbres ont grandi grâce aux graines de Wangari.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -426,12 +406,7 @@ millions d’arbres ont grandi grâce aux graines de Wangari.
 	Wangari had worked hard. People all over the world took notice, and gave her a famous prize. It is called the Nobel Peace Prize, and she was the first African woman ever to receive it.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Wangari avait travaillé dur. Partout
-dans le monde, les gens s’en
-aperçurent et lui donnèrent un prix
-renommé. Il s’appelle le Prix Nobel
-de la Paix et elle fut la première
-femme africaine à le recevoir.
+	Wangari avait travaillé dur. Partout dans le monde, les gens s’en aperçurent et lui donnèrent un prix renommé. Il s’appelle le Prix Nobel de la Paix et elle fut la première femme africaine à le recevoir.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -460,8 +435,7 @@ femme africaine à le recevoir.
 	Wangari died in 2011, but we can think of her every time we see a beautiful tree.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Wangari mourut en 2011 mais nous pensons à elle chaque fois que nous voyons un bel
-arbre.
+	Wangari mourut en 2011 mais nous pensons à elle à chaque fois que nous voyons un bel arbre.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">

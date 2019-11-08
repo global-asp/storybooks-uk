@@ -16,6 +16,7 @@
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-uk/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/es/0089/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
@@ -80,18 +81,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/es/0089/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-uk/audio/es/0089/mp3/01.mp3"></audio>
 			<button onclick="switchlang('es,en','en,fr,es')" class="btn btn-lg lang-primary" title="Switch between Spanish and English">en</button>
 			<button style="display:none" onclick="switchlang('es,fr','en,fr,es')" class="btn btn-lg lang-secondary" title="Switch between Spanish and French">fr</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-uk/css/art.svg" alt="Illustrated by"></span> Jesse Pietersen</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-uk/css/global.svg" alt="Translated by"></span> Karina Vásquez</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-uk/css/megaphone.svg" alt="Read by"></span> Áurea Vericat</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language"></span> <a href="/storybooks-uk/stories/es">Spanish</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level"></span> <a href="/storybooks-uk/stories/es/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/es/0089/es-0089_khalai.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/art.svg" alt="Illustrated by"></span> Jesse Pietersen</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/global.svg" alt="Translated by"></span> Karina Vásquez</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/megaphone.svg" alt="Read by"></span> Áurea Vericat</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/language.svg" alt="Language"></span> <a href="/storybooks-uk/stories/es">Spanish</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/level.svg" alt="Level"></span> <a href="/storybooks-uk/stories/es/level2">Level 2</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="/0089/es-0089_khalai.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -144,7 +145,7 @@ grow big and give us
 lots of ripe oranges.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Khalai se réveille et parle à l’oranger. « S’il-te-plais oranger, grandis et donne-nous beaucoup d’oranges mûres. »
+	Khalai se réveille et parle à l’oranger. « S’il-te-plait oranger, grandis et donne-nous beaucoup d’oranges mûres. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -177,7 +178,7 @@ grass, grow greener
 and don’t dry up.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Khalai marche à l’école. En chemin, elle parle à l’herbe. « S’il-te-plais herbe, deviens plus verte et ne sèche pas. »
+	Khalai marche à l’école. En chemin, elle parle à l’herbe. « S’il-te-plait herbe, deviens plus verte et ne sèche pas. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -210,7 +211,7 @@ so I can put you in my
 hair.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Khalai passe des fleurs sauvages. « S’il-vous-plais fleurs, continuez à fleurir pour que je puisse vous porter dans mes cheveux. »
+	Khalai passe vers des fleurs sauvages. « S’il-vous-plait fleurs, continuez à fleurir pour que je puisse vous porter dans mes cheveux. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -245,7 +246,7 @@ branches so we can
 read under your shade.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	À l’école, Khalai parle à l’arbre au centre du camp. « S’il-te-plais arbre, fais pousser des grandes branches pour que nous puissions lire sous ton ombre. »
+	À l’école, Khalai parle à l’arbre au centre du camp. « S’il-te-plait arbre, fais pousser de grandes branches pour que nous puissions lire sous ton ombre. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -278,7 +279,7 @@ and stop bad people
 from coming in.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Khalai parle à la haie qui entoure son école. « S’il-te-plais, pousse avec puissance et empêche les personnes méchantes d’entrer. »
+	Khalai parle à la haie qui entoure son école. « S’il-te-plait, deviens robuste et empêche les personnes méchantes d’entrer. »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -346,7 +347,7 @@ you will have a ripe
 orange for me!”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	« Les oranges sont encore vertes, » soupire Khalai. « Je te verrai demain oranger, » dit Khalai. « Peut-être demain tu auras une orange mûre pour moi ! »
+	« Les oranges sont encore vertes, » soupire Khalai. « Je te verrai demain oranger, » dit Khalai. « Peut-être que demain tu auras une orange mûre pour moi ! »
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">

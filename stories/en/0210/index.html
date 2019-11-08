@@ -16,6 +16,7 @@
 	<meta name="description" content="Storybooks UK is designed specifically for teachers, parents, and community members. It makes 40 stories from the African Storybook available in English as well as the major national, immigrant and refugee languages of the UK, with stories in Arabic, French, German, Italian, Persian, Polish, Portuguese, Punjabi, Spanish, Tagalog, and Urdu, among others.
 ">
 	<link rel="stylesheet" href="/storybooks-uk/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-uk/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-uk/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-uk/stories/en/0210/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks UK" href="/storybooks-uk">
@@ -80,17 +81,17 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/en/0210/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-uk/audio/en/0210/mp3/01.mp3"></audio>
 			<button onclick="switchlang('en,en','en,fr,en')" class="btn btn-lg lang-primary" title="Switch between English and English">en</button>
 			<button style="display:none" onclick="switchlang('en,fr','en,fr,en')" class="btn btn-lg lang-secondary" title="Switch between English and French">fr</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-uk/css/pencil.svg" alt="Written by"></span> Ingrid Schechter</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-uk/css/art.svg" alt="Illustrated by"></span> Ingrid Schechter</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-uk/css/megaphone.svg" alt="Read by"></span> Darshan Soni</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-uk/css/language.svg" alt="Language"></span> <a href="/storybooks-uk/stories/en">English</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-uk/css/level.svg" alt="Level"></span> <a href="/storybooks-uk/stories/en/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/en/0210/en-0210_tingi.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/pencil.svg" alt="Written by"></span> Ingrid Schechter</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/art.svg" alt="Illustrated by"></span> Ingrid Schechter</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/megaphone.svg" alt="Read by"></span> Darshan Soni</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/language.svg" alt="Language"></span> <a href="/storybooks-uk/stories/en">English</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/level.svg" alt="Level"></span> <a href="/storybooks-uk/stories/en/level2">Level 2</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="/0210/en-0210_tingi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -108,8 +109,7 @@ grandmother.
 grandmother.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Tingi vivait avec sa
-grand-mère.
+	Tingi vivait avec sa grand-mère.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -140,8 +140,7 @@ the cows with her.
 the cows with her.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Il gardait les vaches
-avec elle.
+	Il gardait les vaches avec elle.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -172,8 +171,7 @@ came.
 came.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Un jour, des soldats
-arrivèrent.
+	Un jour, des soldats arrivèrent.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -204,8 +202,7 @@ away.
 away.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Ils emmenèrent les
-vaches.
+	Ils emmenèrent les vaches.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -238,9 +235,7 @@ grandmother ran away
 and hid.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Tingi et sa grand-mère
-se sauvèrent et se
-cachèrent.
+	Tingi et sa grand-mère se sauvèrent et se cachèrent.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -271,9 +266,7 @@ until night.
 until night.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Ils restèrent cachés
-dans des buissons
-jusqu’au soir.
+	Ils restèrent cachés dans des buissons jusqu’au soir.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -304,8 +297,7 @@ came back.
 came back.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Puis les soldats
-revinrent.
+	Puis les soldats revinrent.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -336,9 +328,7 @@ under the leaves.
 under the leaves.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	La grand-mère de Tingi
-recouvrit alors leurs
-corps de feuilles.
+	La grand-mère de Tingi recouvrit alors leurs corps de feuilles.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -371,9 +361,7 @@ his foot right on him,
 but he kept quiet.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Un des soldats marcha
-sur Tingi, mais celui-ci
-ne réagit pas.
+	Un des soldats marcha sur Tingi, mais celui-ci ne réagit pas.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -406,10 +394,7 @@ and his grandmother
 came out.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Quand il n’y eut plus de
-danger, Tingi et sa
-grand-mère se
-relevèrent.
+	Quand il n’y eut plus de danger, Tingi et sa grand-mère se relevèrent.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -440,9 +425,7 @@ quietly.
 quietly.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Ils revinrent chez eux
-sans faire le moindre
-bruit.
+	Ils revinrent chez eux sans faire le moindre bruit.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
