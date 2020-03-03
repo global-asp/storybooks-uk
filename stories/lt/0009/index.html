@@ -47,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/media/sbuk/pdf/lt/lt-0009_where.pdf" target="_blank">Download PDF</a></div>
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Download Options</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -88,6 +88,44 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">The audio for this story is currently not available.</span></h3>
 
 	</div>
+</div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Close" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Close" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Download Options</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Regular PDFs (full-page)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/media/sbuk/pdf/lt/lt-0009_where.pdf" target="_blank">Regular PDF (monolingual)<br><center><img src="/storybooks-uk/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/wordless/0009_where-wordless.pdf" target="_blank">Wordless PDF (landscape)<br><center><img src="/storybooks-uk/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless/lt/lt-0009_where-imageless.pdf" target="_blank">Imageless PDF (monolingual)<br><center><img src="/storybooks-uk/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Bilingual PDFs</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/bilingual/lt-en/0009_where-bilingual_lt-en.pdf" target="_blank">Bilingual PDF (Lithuanian-English, landscape)<br><center><img src="/storybooks-uk/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless-bilingual/lt-en/0009_where-imageless-bilingual_lt-en.pdf" target="_blank">Bilingual imageless PDF (Lithuanian-English, landscape)<br><center><img src="/storybooks-uk/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+        </ul>
+
+
+        <h4>Booklet PDFs (for printing)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/booklet/lt/lt-0009_where-booklet.pdf" target="_blank">Booklet PDF (monolingual)<br><center><img src="/storybooks-uk/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/bilingual-booklet/lt-en/0009_where-bilingual_lt-en-booklet.pdf" target="_blank">Bilingual booklet PDF (Lithuanian-English)<br><center><img src="/storybooks-uk/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/wordless-booklet/0009_where-wordless-booklet.pdf" target="_blank">Wordless booklet<br><center><img src="/storybooks-uk/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless-booklet/lt/lt-0009_where-imageless-booklet.pdf" target="_blank">Imageless booklet (monolingual)<br><center><img src="/storybooks-uk/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless-bilingual-booklet/lt-en/0009_where-imageless-bilingual_lt-en-booklet.pdf" target="_blank">Bilingual imageless booklet (Lithuanian-English)<br><center><img src="/storybooks-uk/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Close</a>
+    </div>
+  </div>
 </div>
 
 <hr>

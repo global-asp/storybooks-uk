@@ -47,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/media/sbuk/pdf/so/so-0030_feelings.pdf" target="_blank">Download PDF</a></div>
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Download Options</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -91,6 +91,44 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-uk/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-uk/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
+</div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Close" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Close" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Download Options</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Regular PDFs (full-page)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/media/sbuk/pdf/so/so-0030_feelings.pdf" target="_blank">Regular PDF (monolingual)<br><center><img src="/storybooks-uk/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/wordless/0030_feelings-wordless.pdf" target="_blank">Wordless PDF (landscape)<br><center><img src="/storybooks-uk/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless/so/so-0030_feelings-imageless.pdf" target="_blank">Imageless PDF (monolingual)<br><center><img src="/storybooks-uk/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Bilingual PDFs</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/bilingual/so-en/0030_feelings-bilingual_so-en.pdf" target="_blank">Bilingual PDF (Somali-English, landscape)<br><center><img src="/storybooks-uk/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless-bilingual/so-en/0030_feelings-imageless-bilingual_so-en.pdf" target="_blank">Bilingual imageless PDF (Somali-English, landscape)<br><center><img src="/storybooks-uk/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+        </ul>
+
+
+        <h4>Booklet PDFs (for printing)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/booklet/so/so-0030_feelings-booklet.pdf" target="_blank">Booklet PDF (monolingual)<br><center><img src="/storybooks-uk/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/bilingual-booklet/so-en/0030_feelings-bilingual_so-en-booklet.pdf" target="_blank">Bilingual booklet PDF (Somali-English)<br><center><img src="/storybooks-uk/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/wordless-booklet/0030_feelings-wordless-booklet.pdf" target="_blank">Wordless booklet<br><center><img src="/storybooks-uk/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless-booklet/so/so-0030_feelings-imageless-booklet.pdf" target="_blank">Imageless booklet (monolingual)<br><center><img src="/storybooks-uk/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbuk-pdf/raw/master/imageless-bilingual-booklet/so-en/0030_feelings-imageless-bilingual_so-en-booklet.pdf" target="_blank">Bilingual imageless booklet (Somali-English)<br><center><img src="/storybooks-uk/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Close</a>
+    </div>
+  </div>
 </div>
 
 <hr>
